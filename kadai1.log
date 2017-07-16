@@ -1,0 +1,289 @@
+スクリプトは 2017年07月16日 22時47分12秒
+ に開始しました[ec2-user@ip-172-31-5-109 working]$ sudo yum install httpd
+読み込んだプラグイン:priorities, update-motd, upgrade-helper
+amzn-main                                              | 2.1 kB     00:00     
+amzn-updates                                           | 2.3 kB     00:00     
+依存性の解決をしています
+--> トランザクションの確認を実行しています。
+---> パッケージ httpd.x86_64 0:2.2.32-1.9.amzn1 を インストール
+--> 依存性の処理をしています: httpd-tools = 2.2.32-1.9.amzn1 のパッケージ: httpd-2.2.32-1.9.amzn1.x86_64
+--> 依存性の処理をしています: apr-util-ldap のパッケージ: httpd-2.2.32-1.9.amzn1.x86_64
+--> 依存性の処理をしています: libaprutil-1.so.0()(64bit) のパッケージ: httpd-2.2.32-1.9.amzn1.x86_64
+--> 依存性の処理をしています: libapr-1.so.0()(64bit) のパッケージ: httpd-2.2.32-1.9.amzn1.x86_64
+--> トランザクションの確認を実行しています。
+---> パッケージ apr.x86_64 0:1.5.1-1.12.amzn1 を インストール
+---> パッケージ apr-util.x86_64 0:1.4.1-4.17.amzn1 を インストール
+---> パッケージ apr-util-ldap.x86_64 0:1.4.1-4.17.amzn1 を インストール
+---> パッケージ httpd-tools.x86_64 0:2.2.32-1.9.amzn1 を インストール
+--> 依存性解決を終了しました。
+
+依存性を解決しました
+
+==============================================================================
+ Package            アーキテクチャー
+                                バージョン            リポジトリー       容量
+==============================================================================
+インストール中:
+ httpd              x86_64      2.2.32-1.9.amzn1      amzn-updates      1.2 M
+依存性関連でのインストールをします:
+ apr                x86_64      1.5.1-1.12.amzn1      amzn-main         116 k
+ apr-util           x86_64      1.4.1-4.17.amzn1      amzn-main          87 k
+ apr-util-ldap      x86_64      1.4.1-4.17.amzn1      amzn-main          17 k
+ httpd-tools        x86_64      2.2.32-1.9.amzn1      amzn-updates       80 k
+
+トランザクションの要約
+==============================================================================
+インストール  1 パッケージ (+4 個の依存関係のパッケージ)
+
+総ダウンロード容量: 1.5 M
+インストール容量: 3.6 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/5): apr-util-1.4.1-4.17.amzn1.x86_64.rpm              |  87 kB   00:00     
+(2/5): apr-1.5.1-1.12.amzn1.x86_64.rpm                   | 116 kB   00:00     
+(3/5): apr-util-ldap-1.4.1-4.17.amzn1.x86_64.rpm         |  17 kB   00:00     
+(4/5): httpd-tools-2.2.32-1.9.amzn1.x86_64.rpm           |  80 kB   00:00     
+(5/5): httpd-2.2.32-1.9.amzn1.x86_64.rpm                 | 1.2 MB   00:00     
+------------------------------------------------------------------------------
+合計                                             2.2 MB/s | 1.5 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  インストール中          : apr-1.5.1-1.12.amzn1. [                     ] 1/5  インストール中          : apr-1.5.1-1.12.amzn1. [#####                ] 1/5  インストール中          : apr-1.5.1-1.12.amzn1. [###########          ] 1/5  インストール中          : apr-1.5.1-1.12.amzn1. [#################    ] 1/5  インストール中          : apr-1.5.1-1.12.amzn1. [##################   ] 1/5  インストール中          : apr-1.5.1-1.12.amzn1. [###################  ] 1/5  インストール中          : apr-1.5.1-1.12.amzn1. [#################### ] 1/5  インストール中          : apr-1.5.1-1.12.amzn1.x86_64                   1/5 
+  インストール中          : apr-util-1.4.1-4.17.a [                     ] 2/5  インストール中          : apr-util-1.4.1-4.17.a [#######              ] 2/5  インストール中          : apr-util-1.4.1-4.17.a [###############      ] 2/5  インストール中          : apr-util-1.4.1-4.17.a [#################    ] 2/5  インストール中          : apr-util-1.4.1-4.17.a [##################   ] 2/5  インストール中          : apr-util-1.4.1-4.17.a [#################### ] 2/5  インストール中          : apr-util-1.4.1-4.17.amzn1.x86_64              2/5 
+  インストール中          : httpd-tools-2.2.32-1. [                     ] 3/5  インストール中          : httpd-tools-2.2.32-1. [#######              ] 3/5  インストール中          : httpd-tools-2.2.32-1. [#########            ] 3/5  インストール中          : httpd-tools-2.2.32-1. [###########          ] 3/5  インストール中          : httpd-tools-2.2.32-1. [#############        ] 3/5  インストール中          : httpd-tools-2.2.32-1. [###############      ] 3/5  インストール中          : httpd-tools-2.2.32-1. [###################  ] 3/5  インストール中          : httpd-tools-2.2.32-1. [#################### ] 3/5  インストール中          : httpd-tools-2.2.32-1.9.amzn1.x86_64           3/5 
+  インストール中          : apr-util-ldap-1.4.1-4 [                     ] 4/5  インストール中          : apr-util-ldap-1.4.1-4 [#################### ] 4/5  インストール中          : apr-util-ldap-1.4.1-4.17.amzn1.x86_64         4/5 
+  インストール中          : httpd-2.2.32-1.9.amzn [                     ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn [#                    ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn [##                   ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn [###                  ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn [####                 ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn [#####                ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn [######               ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn [#######              ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn [########             ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn [#########            ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn [##########           ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn [###########          ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn [############         ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn [#############        ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn [##############       ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn [###############      ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn [################     ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn [#################    ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn [##################   ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn [###################  ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn [#################### ] 5/5  インストール中          : httpd-2.2.32-1.9.amzn1.x86_64                 5/5 
+  検証中                  : apr-1.5.1-1.12.amzn1.x86_64                   1/5 
+  検証中                  : httpd-tools-2.2.32-1.9.amzn1.x86_64           2/5 
+  検証中                  : apr-util-1.4.1-4.17.amzn1.x86_64              3/5 
+  検証中                  : apr-util-ldap-1.4.1-4.17.amzn1.x86_64         4/5 
+  検証中                  : httpd-2.2.32-1.9.amzn1.x86_64                 5/5 
+
+インストール:
+  httpd.x86_64 0:2.2.32-1.9.amzn1                                             
+
+依存性関連をインストールしました:
+  apr.x86_64 0:1.5.1-1.12.amzn1                                               
+  apr-util.x86_64 0:1.4.1-4.17.amzn1                                          
+  apr-util-ldap.x86_64 0:1.4.1-4.17.amzn1                                     
+  httpd-tools.x86_64 0:2.2.32-1.9.amzn1                                       
+
+完了しました!
+[ec2-user@ip-172-31-5-109 working]$ less /etc/httpd/conf
+conf/   conf.d/ 
+[ec2-user@ip-172-31-5-109 working]$ less /etc/httpd/conf
+conf/   conf.d/ 
+[ec2-user@ip-172-31-5-109 working]$ less /etc/httpd/conf
+conf/   conf.d/ 
+[ec2-user@ip-172-31-5-109 working]$ less /etc/httpd/conf/
+httpd.conf  magic       
+[ec2-user@ip-172-31-5-109 working]$ less /etc/httpd/conf/httpd.conf 
+[?1049h[?1h=#
+# This is the main Apache server configuration file.  It contains the
+# configuration directives that give the server its instructions.
+# See <URL:http://httpd.apache.org/docs/2.2/> for detailed information.
+# In particular, see
+# <URL:http://httpd.apache.org/docs/2.2/mod/directives.html>
+# for a discussion of each configuration directive.
+#
+#
+# Do NOT simply read the instructions in here without understanding
+# what they do.  They're here only as hints or reminders.  If you are unsure
+# consult the online docs. You have been warned.  
+#
+# The configuration directives are grouped into three basic sections:
+#  1. Directives that control the operation of the Apache server process as a
+#     whole (the 'global environment').
+#  2. Directives that define the parameters of the 'main' or 'default' server,
+#     which responds to requests that aren't handled by a virtual host.
+#     These directives also provide default values for the settings
+#     of all virtual hosts.
+#  3. Settings for virtual hosts, which allow Web requests to be sent to
+#     different IP addresses or hostnames and have them handled by the
+#     same Apache server process.
+#
+# Configuration and logfile names: If the filenames you specify for many
+# of the server's control files begin with "/" (or "drive:/" for Win32), the
+# server will use that explicit path.  If the filenames do *not* begin
+# with "/", the value of ServerRoot is prepended -- so "logs/foo.log"
+# with ServerRoot set to "/etc/httpd" will be interpreted by the
+# server as "/etc/httpd/logs/foo.log".
+#
+
+### Section 1: Global Environment
+#
+# The directives in this section affect the overall operation of Apache,
+# such as the number of concurrent requests it can handle or where it
+# can find its configuration files.
+#
+
+#
+# Don't give away too much information about all the subcomponents
+# we are running.  Comment out this line if you don't mind remote sites
+# finding out what major optional modules you are running
+ServerTokens OS
+[3m/etc/httpd/conf/httpd.conf [0m[K[K/[KDD[Koo[Kcc[Kuu[Kmm[Kee[Knn[Ktt[KRR[Koo[Koo[Ktt[K[1;1H#
+[2;1H# This is the main Apache server configuration file.  It contains the
+[3;1H# configuration directives that give the server its instructions.
+[4;1H# See <URL:http://httpd.apache.org/docs/2.2/> for detailed information.
+[5;1H# In particular, see
+[6;1H# <URL:http://httpd.apache.org/docs/2.2/mod/directives.html>
+[7;1H# for a discussion of each configuration directive.
+[8;1H#
+[9;1H#
+[10;1H# Do NOT simply read the instructions in here without understanding
+[11;1H# what they do.  They're here only as hints or reminders.  If you are unsure
+[12;1H# consult the online docs. You have been warned.  
+[13;1H#
+[14;1H# The configuration directives are grouped into three basic sections:
+[15;1H#  1. Directives that control the operation of the Apache server process as a
+[16;1H#     whole (the 'global environment').
+[17;1H#  2. Directives that define the parameters of the 'main' or 'default' server,
+[18;1H#     which responds to requests that aren't handled by a virtual host.
+[19;1H#     These directives also provide default values for the settings
+[20;1H#     of all virtual hosts.
+[21;1H#  3. Settings for virtual hosts, which allow Web requests to be sent to
+[22;1H#     different IP addresses or hostnames and have them handled by the
+[23;1H#     same Apache server process.
+[24;1H#
+[25;1H# Configuration and logfile names: If the filenames you specify for many
+[26;1H# of the server's control files begin with "/" (or "drive:/" for Win32), the
+[27;1H# server will use that explicit path.  If the filenames do *not* begin
+[28;1H# with "/", the value of ServerRoot is prepended -- so "logs/foo.log"
+[29;1H# with ServerRoot set to "/etc/httpd" will be interpreted by the
+[30;1H# server as "/etc/httpd/logs/foo.log".
+[31;1H#
+[32;1H
+[33;1H### Section 1: Global Environment
+[34;1H#
+[35;1H# The directives in this section affect the overall operation of Apache,
+[36;1H# such as the number of concurrent requests it can handle or where it
+[37;1H# can find its configuration files.
+[38;1H#
+[39;1H
+[40;1H#
+[41;1H# Don't give away too much information about all the subcomponents
+[42;1H# we are running.  Comment out this line if you don't mind remote sites
+[43;1H# finding out what major optional modules you are running
+[44;1HServerTokens OS
+[45;1H[1;1H#
+[2;1H# This is the main Apache server configuration file.  It contains the
+[3;1H# configuration directives that give the server its instructions.
+[4;1H# See <URL:http://httpd.apache.org/docs/2.2/> for detailed information.
+[5;1H# In particular, see
+[6;1H# <URL:http://httpd.apache.org/docs/2.2/mod/directives.html>
+[7;1H# for a discussion of each configuration directive.
+[8;1H#
+[9;1H#
+[10;1H# Do NOT simply read the instructions in here without understanding
+[11;1H# what they do.  They're here only as hints or reminders.  If you are unsure
+[12;1H# consult the online docs. You have been warned.  
+[13;1H#
+[14;1H# The configuration directives are grouped into three basic sections:
+[15;1H#  1. Directives that control the operation of the Apache server process as a
+[16;1H#     whole (the 'global environment').
+[17;1H#  2. Directives that define the parameters of the 'main' or 'default' server,
+[18;1H#     which responds to requests that aren't handled by a virtual host.
+[19;1H#     These directives also provide default values for the settings
+[20;1H#     of all virtual hosts.
+[21;1H#  3. Settings for virtual hosts, which allow Web requests to be sent to
+[22;1H#     different IP addresses or hostnames and have them handled by the
+[23;1H#     same Apache server process.
+[24;1H#
+[25;1H# Configuration and logfile names: If the filenames you specify for many
+[26;1H# of the server's control files begin with "/" (or "drive:/" for Win32), the
+[27;1H# server will use that explicit path.  If the filenames do *not* begin
+[28;1H# with "/", the value of ServerRoot is prepended -- so "logs/foo.log"
+[29;1H# with ServerRoot set to "/etc/httpd" will be interpreted by the
+[30;1H# server as "/etc/httpd/logs/foo.log".
+[31;1H#
+[32;1H
+[33;1H### Section 1: Global Environment
+[34;1H#
+[35;1H# The directives in this section affect the overall operation of Apache,
+[36;1H# such as the number of concurrent requests it can handle or where it
+[37;1H# can find its configuration files.
+[38;1H#
+[39;1H
+[40;1H#
+[41;1H# Don't give away too much information about all the subcomponents
+[42;1H# we are running.  Comment out this line if you don't mind remote sites
+[43;1H# finding out what major optional modules you are running
+[44;1HServerTokens OS
+[45;1H...skipping...
+# [3mDocumentRoot[0m: The directory out of which you will serve your
+# documents. By default, all requests are taken from this directory, but
+# symbolic links and aliases may be used to point to other locations.
+#
+[3mDocumentRoot[0m "/var/www/html"
+
+#
+# Each directory to which Apache has access can be configured with respect
+# to which services and features are allowed and/or disabled in that
+# directory (and its subdirectories). 
+#
+# First, we configure the "default" to be a very restrictive set of 
+# features.  
+#
+<Directory />
+    Options FollowSymLinks
+    AllowOverride None
+</Directory>
+
+#
+# Note that from this point forward you must specifically allow
+# particular features to be enabled - so if something's not working as
+# you might expect, make sure that you have specifically enabled it
+# below.
+#
+
+#
+# This should be changed to whatever you set [3mDocumentRoot[0m to.
+#
+<Directory "/var/www/html">
+
+#
+# Possible values for the Options directive are "None", "All",
+# or any combination of:
+#   Indexes Includes FollowSymLinks SymLinksifOwnerMatch ExecCGI MultiViews
+#
+# Note that "MultiViews" must be named *explicitly* --- "Options All"
+# doesn't give it to you.
+#
+# The Options directive is both complicated and important.  Please see
+# http://httpd.apache.org/docs/2.2/mod/core.html#options
+# for more information.
+#
+    Options Indexes FollowSymLinks
+:[K[K[?1l>[?1049l[ec2-user@ip-172-31-5-109 working]$ su[K[Ksudo vim /var/[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd /c[Kvar/www/html
+[ec2-user@ip-172-31-5-109 html]$ ls -a
+[0m[38;5;27m.[0m  [38;5;27m..[0m
+[ec2-user@ip-172-31-5-109 html]$ sudo vim index.html
+[?1049h[?1h=[1;45r[34l[34h[?25h[23m[24m[0m[H[J[?25l[45;1H"index.html" [新ファイル][2;1H[94m~                                                                             [3;1H~                                                                             [4;1H~                                                                             [5;1H~                                                                             [6;1H~                                                                             [7;1H~                                                                             [8;1H~                                                                             [9;1H~                                                                             [10;1H~                                                                             [11;1H~                                                                             [12;1H~                                                                             [13;1H~                                                                             [14;1H~                                                                             [15;1H~                                                                             [16;1H~                                                                             [17;1H~                                                                             [18;1H~                                                                             [19;1H~                                                                             [20;1H~                                                                             [21;1H~                                                                             [22;1H~                                                                             [23;1H~                                                                             [24;1H~                                                                             [25;1H~                                                                             [26;1H~                                                                             [27;1H~                                                                             [28;1H~                                                                             [29;1H~                                                                             [30;1H~                                                                             [31;1H~                                                                             [32;1H~                                                                             [33;1H~                                                                             [34;1H~                                                                             [35;1H~                                                                             [36;1H~                                                                             [37;1H~                                                                             [38;1H~                                                                             [39;1H~                                                                             [40;1H~                                                                             [41;1H~                                                                             [42;1H~                                                                             [43;1H~                                                                             [44;1H~                                                                             [0m[45;61H0,0-1[8C全て[1;1H[34h[?25h[?25l[45;1H[1m-- 挿入 --[0m[45;11H[K[45;61H0,1[10C全て[1;1H[34h[?25h[?25lA[45;61H1,2[1;2H[34h[?25h[?25lM[45;63H3[1;3H[34h[?25h[?25lA[45;63H4[1;4H[34h[?25h[?25lZ[45;63H5[1;5H[34h[?25h[?25lO[45;63H6[1;6H[34h[?25h[?25lN[45;63H7[1;7H[34h[?25h[45;1H[K[1;6H[?25l[45;61H1,6[10C全て[1;6H[34h[?25h[?25l[45;61H[K[45;1H:[34h[?25hw[?25l[34h[?25hq[?25l[34h[?25h[?25l"index.html" [新] 1L, 7C 書込み
+[?1l>[34h[?25h[?1049l[ec2-user@ip-172-31-5-109 html]$ curl "http://54.238.237.78/"
+curl: (7) Failed to connect to 54.238.237.78 port 80: 接続を拒否されました
+[ec2-user@ip-172-31-5-109 html]$ service httpd start
+Starting httpd: (13)Permission denied: make_sock: could not bind to address [::]:80
+(13)Permission denied: make_sock: could not bind to address 0.0.0.0:80
+no listening sockets available, shutting down
+Unable to open logs
+[60G[[0;31mFAILED[0;39m]
+[ec2-user@ip-172-31-5-109 html]$ service httpd start[C[1@s[1@u[1@d[1@o[1@ 
+Starting httpd: [60G[[0;32m  OK  [0;39m]
+[ec2-user@ip-172-31-5-109 html]$ sudo service httpd start[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccurl "http://54.238.237.78/"
+AMAZON
+[ec2-user@ip-172-31-5-109 html]$ exit
+exit
+
+スクリプトは 2017年07月16日 22時50分20秒
+ に終了しましたスクリプトは 2017年07月16日 22時50分58秒
+ に開始しました[ec2-user@ip-172-31-5-109 working]$ chkconfig httpd on
+この操作を実行するためには権限が十分ではありません。
+[ec2-user@ip-172-31-5-109 working]$ chkconfig httpd on[1@s[1@u[1@d[1@o[1@ 
+[ec2-user@ip-172-31-5-109 working]$ exit
+exit
+
+スクリプトは 2017年07月16日 22時51分20秒
+ に終了しました

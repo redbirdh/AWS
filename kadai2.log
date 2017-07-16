@@ -1,0 +1,306 @@
+スクリプトは 2017年07月16日 22時53分00秒
+ に開始しました[ec2-user@ip-172-31-5-109 working]$ cd /dev/www/htt[K[K[K[K[K[K[K[K[K[K[Kcar[K[K[Kvar/www/html
+[ec2-user@ip-172-31-5-109 html]$ mkdir secret
+mkdir: ディレクトリ `secret' を作成できません: 許可がありません
+[ec2-user@ip-172-31-5-109 html]$ mkdir secret[C[C[C[C[C[C[C[C[C[C[C[C[1@s[1@u[1@d[1@o[1@ 
+[ec2-user@ip-172-31-5-109 html]$ cd secret/
+[ec2-user@ip-172-31-5-109 secret]$ sudo index.hm[Ktml[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksudo index.html
+sudo: index.html: コマンドが見つかりません
+[ec2-user@ip-172-31-5-109 secret]$ sudo index.htmlvindex.html[Cindex.htmlmindex.html index.html
+[?1049h[?1h=[1;45r[34l[34h[?25h[23m[24m[0m[H[J[?25l[45;1H"index.html" [新ファイル][2;1H[94m~                                                                             [3;1H~                                                                             [4;1H~                                                                             [5;1H~                                                                             [6;1H~                                                                             [7;1H~                                                                             [8;1H~                                                                             [9;1H~                                                                             [10;1H~                                                                             [11;1H~                                                                             [12;1H~                                                                             [13;1H~                                                                             [14;1H~                                                                             [15;1H~                                                                             [16;1H~                                                                             [17;1H~                                                                             [18;1H~                                                                             [19;1H~                                                                             [20;1H~                                                                             [21;1H~                                                                             [22;1H~                                                                             [23;1H~                                                                             [24;1H~                                                                             [25;1H~                                                                             [26;1H~                                                                             [27;1H~                                                                             [28;1H~                                                                             [29;1H~                                                                             [30;1H~                                                                             [31;1H~                                                                             [32;1H~                                                                             [33;1H~                                                                             [34;1H~                                                                             [35;1H~                                                                             [36;1H~                                                                             [37;1H~                                                                             [38;1H~                                                                             [39;1H~                                                                             [40;1H~                                                                             [41;1H~                                                                             [42;1H~                                                                             [43;1H~                                                                             [44;1H~                                                                             [0m[45;61H0,0-1[8C全て[1;1H[34h[?25h[?25l[45;1H[1m-- 挿入 --[0m[45;11H[K[45;61H0,1[10C全て[1;1H[34h[?25h[?25l[97m[101m<[0m[45;61H1,2[1;2H[34h[?25h[?25l[34m<![0m[45;63H3[1;3H[34h[?25h[?25l[97m[101mD[0m[45;63H4[1;4H[34h[?25h[?25l[97m[101mO[0m[45;63H5[1;5H[34h[?25h[?25l[97m[101mC[0m[45;63H6[1;6H[34h[?25h[?25l[97m[101mT[0m[45;63H7[1;7H[34h[?25h[?25l[97m[101mY[0m[45;63H8[1;8H[34h[?25h[?25l[97m[101mP[0m[45;63H9[1;9H[34h[?25h[?25l[1;3H[34mDOCTYPE[0m[45;63H10[1;10H[34h[?25h[?25l[34m [0m[45;64H1[1;11H[34h[?25h[?25l[34mH[0m[45;64H2[1;12H[34h[?25h[?25l[34mT[0m[45;64H3[1;13H[34h[?25h[?25l[34mM[0m[45;64H4[1;14H[34h[?25h[?25l[34mL[0m[45;64H5[1;15H[34h[?25h[?25l[34m [0m[45;64H6[1;16H[34h[?25h[?25l[34mP[0m[45;64H7[1;17H[34h[?25h[?25l[34mU[0m[45;64H8[1;18H[34h[?25h[?25l[34mB[0m[45;64H9[1;19H[34h[?25h[?25l[34mL[0m[45;63H20[1;20H[34h[?25h[?25l[34mI[0m[45;64H1[1;21H[34h[?25h[?25l[34mC[0m[45;64H2[1;22H[34h[?25h[?25l[34m [0m[45;64H3[1;23H[34h[?25h[?25l[1;22H[K[45;64H2[1;22H[34h[?25h[?25l[1;21H[K[45;64H1[1;21H[34h[?25h[?25l[1;20H[K[45;64H0[1;20H[34h[?25h[?25l[1;19H[K[45;63H19[1;19H[34h[?25h[?25l[1;18H[K[45;64H8[1;18H[34h[?25h[?25l[1;17H[K[45;64H7[1;17H[34h[?25h[?25l[1;16H[K[45;64H6[1;16H[34h[?25h[?25l[1;15H[K[45;64H5[1;15H[34h[?25h[?25l[34m>[0m[34m[106m<[13C>[0m[45;64H6[1;16H[34h[?25h[?25l[2;1H[K[1;1H[34m<[13C>[0m[45;61H2,1 [2;1H[34h[?25h[?25l[97m[101m<[0m[45;63H2[2;2H[34h[?25h[?25l[36m<[0mh[45;63H3[2;3H[34h[?25h[?25lt[45;63H4[2;4H[34h[?25h[?25lm[45;63H5[2;5H[34h[?25h[?25l[2;2H[38;5;130mhtml[0m[45;63H6[2;6H[34h[?25h[?25l[36m>[0m[36m[106m<[4C>[0m[45;63H7[2;7H[34h[?25h[?25l[97m[101m<[0m[36m<[4C>[0m[45;63H8[2;8H[34h[?25h[?25l[36m<[0mh[45;63H9[2;9H[34h[?25h[?25le[45;63H10[2;10H[34h[?25h[?25la[45;64H1[2;11H[34h[?25h[?25l[38;5;130mhead[0m[45;64H2[2;12H[34h[?25h[?25l[36m>[0m[36m[106m<[4C>[0m[45;64H3[2;13H[34h[?25h[?25l[2;12H[K[2;7H[36m<[0m[45;64H2[2;12H[34h[?25h[?25lhea[2;11H[K[45;64H1[2;11H[34h[?25h[?25l[2;10H[K[45;64H0[2;10H[34h[?25h[?25l[2;9H[K[45;63H9 [2;9H[34h[?25h[?25l[97m[101m<[0m[2;8H[K[45;63H8[2;8H[34h[?25h[?25l[2;7H[K[2;1H[36m[106m<[4C>[0m[45;63H7[2;7H[34h[?25h[?25l[3;1H[K[2;1H[36m<[4C>[0m[45;61H3,1[3;1H[34h[?25h[?25l[97m[101m<[0m[45;63H2[3;2H[34h[?25h[?25l[36m<[0mh[45;63H3[3;3H[34h[?25h[?25le[45;63H4[3;4H[34h[?25h[?25la[45;63H5[3;5H[34h[?25h[?25l[3;2H[38;5;130mhead[0m[45;63H6[3;6H[34h[?25h[?25l[36m>[0m[36m[106m<[4C>[0m[45;63H7[3;7H[34h[?25h[?25l[4;1H[K[3;1H[36m<[4C>[0m[45;61H4,1[4;1H[34h[?25h[?25l[35m        [0m[45;63H2-9[4;9H[34h[?25h[?25l[4;1H[K[45;63H1  [4;1H[34h[?25h[?25l[94m~                                                                             [0m[3;1H[36m[106m<[4C>[0m[45;61H3,7[3;7H[34h[?25h[?25l[4;1H[K[3;1H[36m<[4C>[0m[45;61H4,1[4;1H[34h[?25h[?25l[35m<[0m[45;63H2[4;2H[34h[?25h[?25l[36m<[0mt[45;63H3[4;3H[34h[?25h[?25lj[45;63H4[4;4H[34h[?25h[?25lt[45;63H5[4;5H[34h[?25h[?25l[4;4H[K[45;63H4[4;4H[34h[?25h[?25l[4;3H[K[45;63H3[4;3H[34h[?25h[?25l[38;5;130mtt[0m[45;63H4[4;4H[34h[?25h[?25lttl[45;63H5[4;5H[34h[?25h[?25le[45;63H6[4;6H[34h[?25h[?25l[4;5H[K[45;63H5[4;5H[34h[?25h[?25l[4;2H[38;5;130mtt[0m[4;4H[K[45;63H4[4;4H[34h[?25h[?25lt[4;3H[K[45;63H3[4;3H[34h[?25h[?25l[35m<[0m[4;2H[K[45;63H2[4;2H[34h[?25h[?25l[4;1H[K[45;63H1[4;1H[34h[?25h[?25l[94m~                                                                             [0m[3;1H[36m[106m<[4C>[0m[45;61H3,7[3;7H[34h[?25h[?25l[3;6H[K[3;1H[36m<[0m[45;63H6[3;6H[34h[?25h[?25l[3;2Hhea[3;5H[K[45;63H5[3;5H[34h[?25h[?25l[3;4H[K[45;63H4[3;4H[34h[?25h[?25l[3;3H[K[45;63H3[3;3H[34h[?25h[?25l[97m[101m<[0m[3;2H[K[45;63H2[3;2H[34h[?25h[?25l[3;1H[K[45;63H1[3;1H[34h[?25h[?25l[97m[101m<[0m[45;63H2[3;2H[34h[?25h[?25l[36m<[0m[38;5;130mb[0m[45;63H3[3;3H[34h[?25h[?25lbo[45;63H4[3;4H[34h[?25h[?25ld[45;63H5[3;5H[34h[?25h[?25l[3;2H[38;5;130mbody[0m[45;63H6[3;6H[34h[?25h[?25l[36m>[0m[36m[106m<[4C>[0m[45;63H7[3;7H[34h[?25h[?25l[4;1H[K[3;1H[36m<[4C>[0m[45;61H4,1[4;1H[34h[?25h[?25lS[45;63H2[4;2H[34h[?25h[?25lU[45;63H3[4;3H[34h[?25h[?25lC[45;63H4[4;4H[34h[?25h[?25lC[45;63H5[4;5H[34h[?25h[?25lE[45;63H6[4;6H[34h[?25h[?25lS[45;63H7[4;7H[34h[?25h[?25lS[45;63H8[4;8H[34h[?25h[?25l[5;1H[K[45;61H5,1[5;1H[34h[?25h[?25l[97m[101m<[0m[45;63H2[5;2H[34h[?25h[?25l[36m</[0m[45;63H3[5;3H[34h[?25h[?25l[38;5;130mb[0m[45;63H4[5;4H[34h[?25h[?25lbo[45;63H5[5;5H[34h[?25h[?25ld[45;63H6[5;6H[34h[?25h[?25l[38;5;130mbody[0m[45;63H7[5;7H[34h[?25h[?25l[36m>[0m[36m[106m<[5C>[0m[45;63H8[5;8H[34h[?25h[?25l[6;1H[K[5;1H[36m<[5C>[0m[45;61H6,1[6;1H[34h[?25h[?25l[97m[101m>[0m[45;63H2[6;2H[34h[?25h[?25l[6;1H[K[45;63H1[6;1H[34h[?25h[?25l[97m[101m<[0m[45;63H2[6;2H[34h[?25h[?25l[36m</[0m[45;63H3[6;3H[34h[?25h[?25lh[45;63H4[6;4H[34h[?25h[?25lt[45;63H5[6;5H[34h[?25h[?25lm[45;63H6[6;6H[34h[?25h[?25l[38;5;130mhtml[0m[45;63H7[6;7H[34h[?25h[?25l[36m>[0m[36m[106m<[5C>[0m[45;63H8[6;8H[34h[?25h[45;1H[K[6;7H[?25l[45;61H6,7[10C全て[6;7H[34h[?25h[?25l[45;61H[K[45;1H:[34h[?25hw[?25l[34h[?25hq[?25l[34h[?25h[?25l"index.html" [新] 6L, 54C 書込み
+[?1l>[34h[?25h[?1049l[ec2-user@ip-172-31-5-109 secret]$ sudo vim .htaccess
+[?1049h[?1h=[1;45r[34l[34h[?25h[23m[24m[0m[H[J[?25l[45;1H".htaccess" [新ファイル][2;1H[94m~                                                                             [3;1H~                                                                             [4;1H~                                                                             [5;1H~                                                                             [6;1H~                                                                             [7;1H~                                                                             [8;1H~                                                                             [9;1H~                                                                             [10;1H~                                                                             [11;1H~                                                                             [12;1H~                                                                             [13;1H~                                                                             [14;1H~                                                                             [15;1H~                                                                             [16;1H~                                                                             [17;1H~                                                                             [18;1H~                                                                             [19;1H~                                                                             [20;1H~                                                                             [21;1H~                                                                             [22;1H~                                                                             [23;1H~                                                                             [24;1H~                                                                             [25;1H~                                                                             [26;1H~                                                                             [27;1H~                                                                             [28;1H~                                                                             [29;1H~                                                                             [30;1H~                                                                             [31;1H~                                                                             [32;1H~                                                                             [33;1H~                                                                             [34;1H~                                                                             [35;1H~                                                                             [36;1H~                                                                             [37;1H~                                                                             [38;1H~                                                                             [39;1H~                                                                             [40;1H~                                                                             [41;1H~                                                                             [42;1H~                                                                             [43;1H~                                                                             [44;1H~                                                                             [0m[45;61H0,0-1[8C全て[1;1H[34h[?25h[?25l[45;1H[1m-- 挿入 --[0m[45;11H[K[45;61H0,1[10C全て[1;1H[34h[?25h[?25lA[45;61H1,2[1;2H[34h[?25h[?25lu[45;63H3[1;3H[34h[?25h[?25lt[45;63H4[1;4H[34h[?25h[?25lu[45;63H5[1;5H[34h[?25h[?25l[1;4H[K[45;63H4[1;4H[34h[?25h[?25l[31mAuth[0m[45;63H5[1;5H[34h[?25h[?25lAuthT[45;63H6[1;6H[34h[?25h[?25ly[45;63H7[1;7H[34h[?25h[?25lp[45;63H8[1;8H[34h[?25h[?25l[36mAuthType[0m[45;63H9[1;9H[34h[?25h[?25l[45;63H10[1;10H[34h[?25h[?25l[45;63H9 [1;9H[34h[?25h[?25l[45;63H10-17[1;17H[34h[?25h[?25lB[45;64H1-18[1;18H[34h[?25h[?25la[45;64H2-19[1;19H[34h[?25h[?25ls[45;64H3-20[1;20H[34h[?25h[?25li[45;64H4-21[1;21H[34h[?25h[?25l[31mBasic[0m[45;64H5-22[1;22H[34h[?25h[?25lBasi[1;21H[K[45;64H4-21[1;21H[34h[?25h[?25l[1;20H[K[45;64H3-20[1;20H[34h[?25h[?25l[1;19H[K[45;64H2-19[1;19H[34h[?25h[?25l[1;18H[K[45;64H1-18[1;18H[34h[?25h[?25l[1;17H[K[45;64H0-17[1;17H[34h[?25h[?25l[45;63H9    [1;9H[34h[?25h[?25lAuthTyp[1;8H[K[45;63H8[1;8H[34h[?25h[?25l[36mAuthType[0m[45;63H9[1;9H[34h[?25h[?25l[45;63H10-17[1;17H[34h[?25h[?25l[45;63H9    [1;9H[34h[?25h[?25l[45;63H10[1;10H[34h[?25h[?25l[45;63H9 [1;9H[34h[?25h[?25l[45;63H10[1;10H[34h[?25h[?25lB[45;64H1[1;11H[34h[?25h[?25la[45;64H2[1;12H[34h[?25h[?25ls[45;64H3[1;13H[34h[?25h[?25lk[45;64H4[1;14H[34h[?25h[?25l[1;13H[K[45;64H3[1;13H[34h[?25h[?25li[45;64H4[1;14H[34h[?25h[?25l[31mBasic[0m[45;64H5[1;15H[34h[?25h[?25l[2;1H[K[45;61H2,1 [2;1H[34h[?25h[?25lA[45;63H2[2;2H[34h[?25h[?25lu[45;63H3[2;3H[34h[?25h[?25lt[45;63H4[2;4H[34h[?25h[?25l[31mAuth[0m[45;63H5[2;5H[34h[?25h[?25lAuthN[45;63H6[2;6H[34h[?25h[?25la[45;63H7[2;7H[34h[?25h[?25lm[45;63H8[2;8H[34h[?25h[?25l[36mAuthName[0m[45;63H9[2;9H[34h[?25h[?25l[45;63H10[2;10H[34h[?25h[?25lA[45;64H1[2;11H[34h[?25h[?25lu[45;64H2[2;12H[34h[?25h[?25lt[45;64H3[2;13H[34h[?25h[?25l[31mAuth[0m[45;64H4[2;14H[34h[?25h[?25lAuthe[45;64H5[2;15H[34h[?25h[?25ln[45;64H6[2;16H[34h[?25h[?25lt[45;64H7[2;17H[34h[?25h[?25li[45;64H8[2;18H[34h[?25h[?25lc[45;64H9[2;19H[34h[?25h[?25la[45;63H20[2;20H[34h[?25h[?25l[2;19H[K[45;63H19[2;19H[34h[?25h[?25la[45;63H20[2;20H[34h[?25h[?25lt[45;64H1[2;21H[34h[?25h[?25li[45;64H2[2;22H[34h[?25h[?25lo[45;64H3[2;23H[34h[?25h[?25ln[45;64H4[2;24H[34h[?25h[?25l[45;64H3[2;23H[34h[?25h[?25l[45;64H2[2;22H[34h[?25h[?25l[45;64H1[2;21H[34h[?25h[?25l[45;64H0[2;20H[34h[?25h[?25l[45;63H19[2;19H[34h[?25h[?25l[45;64H8[2;18H[34h[?25h[?25l[45;64H7[2;17H[34h[?25h[?25l[45;64H6[2;16H[34h[?25h[?25l[45;64H5[2;15H[34h[?25h[?25l[45;64H4[2;14H[34h[?25h[?25l[45;64H3[2;13H[34h[?25h[?25l[45;64H2[2;12H[34h[?25h[?25l[45;64H1[2;11H[34h[?25h[?25l[45;64H0[2;10H[34h[?25h[?25l"Authentication[45;64H1[2;11H[34h[?25h[?25l[45;64H2[2;12H[34h[?25h[?25l[45;64H3[2;13H[34h[?25h[?25l[45;64H4[2;14H[34h[?25h[?25l[45;64H5[2;15H[34h[?25h[?25l[45;64H6[2;16H[34h[?25h[?25l[45;64H7[2;17H[34h[?25h[?25l[45;64H8[2;18H[34h[?25h[?25l[45;64H9[2;19H[34h[?25h[?25l[45;63H20[2;20H[34h[?25h[?25l[45;64H1[2;21H[34h[?25h[?25l[45;64H2[2;22H[34h[?25h[?25l[45;64H3[2;23H[34h[?25h[?25l[45;64H4[2;24H[34h[?25h[?25l[45;64H5[2;25H[34h[?25h[?25l[45;64H6[2;26H[34h[?25h[?25lp[45;64H7[2;27H[34h[?25h[?25la[45;64H8[2;28H[34h[?25h[?25lg[45;64H9[2;29H[34h[?25h[?25le[45;63H30[2;30H[34h[?25h[?25l[2;29H[K[45;63H29[2;29H[34h[?25h[?25l[2;28H[K[45;64H8[2;28H[34h[?25h[?25l[2;27H[K[45;64H7[2;27H[34h[?25h[?25l[2;26H[K[45;64H6[2;26H[34h[?25h[?25l[45;64H5[2;25H[34h[?25h[?25l[2;10H[31m"Authentication"[0m[45;64H6[2;26H[34h[?25h[?25l[3;1H[K[45;61H3,1 [3;1H[34h[?25h[?25lA[45;63H2[3;2H[34h[?25h[?25lu[45;63H3[3;3H[34h[?25h[?25lt[45;63H4[3;4H[34h[?25h[?25l[31mAuth[0m[45;63H5[3;5H[34h[?25h[?25l[45;63H6[3;6H[34h[?25h[?25l[45;63H5[3;5H[34h[?25h[?25lAuthU[45;63H6[3;6H[34h[?25h[?25ls[45;63H7[3;7H[34h[?25h[?25le[45;63H8[3;8H[34h[?25h[?25lr[45;63H9[3;9H[34h[?25h[?25lF[45;63H10[3;10H[34h[?25h[?25li[45;64H1[3;11H[34h[?25h[?25ll[45;64H2[3;12H[34h[?25h[?25l[36mAuthUserFile[0m[45;64H3[3;13H[34h[?25h[?25l[45;64H4[3;14H[34h[?25h[?25l/[45;64H5[3;15H[34h[?25h[?25lv[45;64H6[3;16H[34h[?25h[?25la[45;64H7[3;17H[34h[?25h[?25lr[45;64H8[3;18H[34h[?25h[?25l/[45;64H9[3;19H[34h[?25h[?25lw[45;63H20[3;20H[34h[?25h[?25lw[45;64H1[3;21H[34h[?25h[?25lw[45;64H2[3;22H[34h[?25h[?25l/[45;64H3[3;23H[34h[?25h[?25lh[45;64H4[3;24H[34h[?25h[?25lt[45;64H5[3;25H[34h[?25h[?25lm[45;64H6[3;26H[34h[?25h[?25ll[45;64H7[3;27H[34h[?25h[?25l/[45;64H8[3;28H[34h[?25h[?25ls[45;64H9[3;29H[34h[?25h[?25le[45;63H30[3;30H[34h[?25h[?25lc[45;64H1[3;31H[34h[?25h[?25lr[45;64H2[3;32H[34h[?25h[?25le[45;64H3[3;33H[34h[?25h[?25lt[45;64H4[3;34H[34h[?25h[?25l/[45;64H5[3;35H[34h[?25h[?25l.[45;64H6[3;36H[34h[?25h[?25lh[45;64H7[3;37H[34h[?25h[?25lt[45;64H8[3;38H[34h[?25h[?25lp[45;64H9[3;39H[34h[?25h[?25la[45;63H40[3;40H[34h[?25h[?25ls[45;64H1[3;41H[34h[?25h[?25ls[45;64H2[3;42H[34h[?25h[?25lw[45;64H3[3;43H[34h[?25h[?25ld[45;64H4[3;44H[34h[?25h[?25l[4;1H[K[45;61H4,1 [4;1H[34h[?25h[?25lr[45;63H2[4;2H[34h[?25h[?25le[45;63H3[4;3H[34h[?25h[?25lq[45;63H4[4;4H[34h[?25h[?25lu[45;63H5[4;5H[34h[?25h[?25li[45;63H6[4;6H[34h[?25h[?25lr[45;63H7[4;7H[34h[?25h[?25l[36mrequire[0m[45;63H8[4;8H[34h[?25h[?25lrequired[45;63H9[4;9H[34h[?25h[?25l[36mrequire[0m[4;8H[K[45;63H8[4;8H[34h[?25h[?25l[45;63H9[4;9H[34h[?25h[?25lc[45;63H10[4;10H[34h[?25h[?25l[4;9H[K[45;63H9 [4;9H[34h[?25h[?25lv[45;63H10[4;10H[34h[?25h[?25la[45;64H1[4;11H[34h[?25h[?25ll[45;64H2[4;12H[34h[?25h[?25li[45;64H3[4;13H[34h[?25h[?25ld[45;64H4[4;14H[34h[?25h[?25l-[45;64H5[4;15H[34h[?25h[?25lu[45;64H6[4;16H[34h[?25h[?25ls[45;64H7[4;17H[34h[?25h[?25le[45;64H8[4;18H[34h[?25h[?25l[4;9H[31mvalid-user[0m[45;64H9[4;19H[34h[?25h[45;1H[K[4;18H[?25l[45;61H4,18[9C全て[4;18H[34h[?25h[?25l[45;61H[K[45;1H:[34h[?25hw[?25l[34h[?25hq[?25l[34h[?25h[?25l".htaccess" [新] 4L, 104C 書込み
+[?1l>[34h[?25h[?1049l[ec2-user@ip-172-31-5-109 secret]$ sudo vim .htaccess[C[K[K[K[K[K[Kpasswd
+[?1049h[?1h=[1;45r[34l[34h[?25h[23m[24m[0m[H[J[?25l[45;1H".htpasswd" [新ファイル][2;1H[94m~                                                                             [3;1H~                                                                             [4;1H~                                                                             [5;1H~                                                                             [6;1H~                                                                             [7;1H~                                                                             [8;1H~                                                                             [9;1H~                                                                             [10;1H~                                                                             [11;1H~                                                                             [12;1H~                                                                             [13;1H~                                                                             [14;1H~                                                                             [15;1H~                                                                             [16;1H~                                                                             [17;1H~                                                                             [18;1H~                                                                             [19;1H~                                                                             [20;1H~                                                                             [21;1H~                                                                             [22;1H~                                                                             [23;1H~                                                                             [24;1H~                                                                             [25;1H~                                                                             [26;1H~                                                                             [27;1H~                                                                             [28;1H~                                                                             [29;1H~                                                                             [30;1H~                                                                             [31;1H~                                                                             [32;1H~                                                                             [33;1H~                                                                             [34;1H~                                                                             [35;1H~                                                                             [36;1H~                                                                             [37;1H~                                                                             [38;1H~                                                                             [39;1H~                                                                             [40;1H~                                                                             [41;1H~                                                                             [42;1H~                                                                             [43;1H~                                                                             [44;1H~                                                                             [0m[45;61H0,0-1[8C全て[1;1H[34h[?25h[?25l[45;1H[K[45;1H:[34h[?25hq[?25l[34h[?25h![?25l[34h[?25h[?25l[45;1H[K[45;1H[?1l>[34h[?25h[?1049l[ec2-user@ip-172-31-5-109 secret]$ ls -a
+[0m[38;5;27m.[0m  [38;5;27m..[0m  .htaccess  index.html
+[ec2-user@ip-172-31-5-109 secret]$ sudo hta[Kpasswd -c /var/www/html/secret//[K.htpa sswd
+Usage:
+	htpasswd [-cmdpsD] passwordfile username
+	htpasswd -b[cmdpsD] passwordfile username password
+
+	htpasswd -n[mdps] username
+	htpasswd -nb[mdps] username password
+ -c  Create a new file.
+ -n  Don't update file; display results on stdout.
+ -m  Force MD5 encryption of the password (default).
+ -d  Force CRYPT encryption of the password.
+ -p  Do not encrypt the password (plaintext).
+ -s  Force SHA encryption of the password.
+ -b  Use the password from the command line rather than prompting for it.
+ -D  Delete the specified user.
+On other systems than Windows, NetWare and TPF the '-p' flag will probably not work.
+The SHA algorithm does not use a salt and is less secure than the MD5 algorithm.
+[ec2-user@ip-172-31-5-109 secret]$ man htpasswd
+[?1049h[?1h=HTPASSWD(1)                       htpasswd                       HTPASSWD(1)[m
+[m
+[01;38;5;208mNAME[0m[m
+       htpasswd - Manage user files for basic authentication[m
+[m
+[01;38;5;208mSYNOPSIS[0m[m
+       [01;38;5;208mhtpasswd[0m [ -[01;38;5;208mc[0m ] [ -[01;38;5;208mm[0m ] [ -[01;38;5;208mD[0m ] [04;38;5;111mpasswdfile[0m [04;38;5;111musername[0m[m
+[m
+       [01;38;5;208mhtpasswd[0m  -[01;38;5;208mb[0m  [ -[01;38;5;208mc[0m ] [ -[01;38;5;208mm[0m | -[01;38;5;208md[0m | -[01;38;5;208mp[0m | -[01;38;5;208ms[0m ] [ -[01;38;5;208mD[0m ] [04;38;5;111mpasswdfile[0m [04;38;5;111musername[0m[m
+       [04;38;5;111mpassword[0m[m
+[m
+       [01;38;5;208mhtpasswd[0m -[01;38;5;208mn[0m [ -[01;38;5;208mm[0m | -[01;38;5;208md[0m | -[01;38;5;208ms[0m | -[01;38;5;208mp[0m ] [04;38;5;111musername[0m[m
+[m
+       [01;38;5;208mhtpasswd[0m -[01;38;5;208mnb[0m [ -[01;38;5;208mm[0m | -[01;38;5;208md[0m | -[01;38;5;208ms[0m | -[01;38;5;208mp[0m ] [04;38;5;111musername[0m [04;38;5;111mpassword[0m[m
+[m
+[01;38;5;208mSUMMARY[0m[m
+       htpasswd is used to create and update the flat-files  used  to  store[m
+       usernames  and  password  for  basic authentication of HTTP users. If[m
+       htpasswd cannot access a file, such as not being able to write to the[m
+       output file or not being able to read the file in order to update it,[m
+       it returns an error status and makes no changes.[m
+[m
+       Resources available from the Apache HTTP server can be restricted  to[m
+       just  the users listed in the files created by htpasswd. This program[m
+       can only manage usernames and passwords stored in a flat-file. It can[m
+       encrypt  and  display  password information for use in other types of[m
+       data stores, though. To use a DBM database see dbmmanage.[m
+[m
+       htpasswd encrypts passwords using either a version  of  MD5  modified[m
+       for  Apache,  or  the  system's  crypt()  routine.  Files  managed by[m
+       htpasswd may contain both types of passwords; some user  records  may[m
+       have  MD5-encrypted  passwords while others in the same file may have[m
+       passwords encrypted with crypt().[m
+[m
+       This manual page only lists the command line arguments.  For  details[m
+       of the directives necessary to configure user authentication in httpd[m
+       see the Apache manual, which is part of the  Apache  distribution  or[m
+       can be found at http://httpd.apache.org/.[m
+[m
+[01;38;5;208mOPTIONS[0m[m
+       -b     Use  batch  mode; [04;38;5;111mi.e.[0m, get the password from the command line[m
+              rather than prompting for it. This option should be used  with[m
+              extreme  care,  since  [01;38;5;208mthe[0m  [01;38;5;208mpassword[0m [01;38;5;208mis[0m [01;38;5;208mclearly[0m [01;38;5;208mvisible[0m on the[m
+              command line.[m
+[3m Manual page htpasswd(1) line 1 (press h for help or q to quit)[0m[K[K[?1l>[?1049l[ec2-user@ip-172-31-5-109 secret]$ man htpasswdsudo htpasswd -c /var/www/html/secret/.htpassswd amazon
+New password: 
+Re-type new password: 
+Adding password for user amazon
+[ec2-user@ip-172-31-5-109 secret]$ ls -a[K[K[K[K[Kls -a
+[0m[38;5;27m.[0m  [38;5;27m..[0m  .htaccess  .htpasswd  index.html
+[ec2-user@ip-172-31-5-109 secret]$ less .he[Kta[K[a[K[Kpasswd 
+[?1049h[?1h=amazon:$apr1$HdxqrLcy$dWMAX/WDdpwn5ciHFfz150
+[3m.htpasswd (END) [0m[K[K[?1l>[?1049l[ec2-user@ip-172-31-5-109 secret]$ ls -a[Kal
+合計 20
+drwxr-xr-x 2 root root 4096  7月 16 23:05 [0m[38;5;27m.[0m
+drwxr-xr-x 3 root root 4096  7月 16 22:53 [38;5;27m..[0m
+-rw-r--r-- 1 root root  104  7月 16 23:01 .htaccess
+-rw-r--r-- 1 root root   45  7月 16 23:05 .htpasswd
+-rw-r--r-- 1 root root   54  7月 16 22:56 index.html
+[ec2-user@ip-172-31-5-109 secret]$ service httpd restart
+Stopping httpd: [60G[[0;31mFAILED[0;39m]
+Starting httpd: (13)Permission denied: make_sock: could not bind to address [::]:80
+(13)Permission denied: make_sock: could not bind to address 0.0.0.0:80
+no listening sockets available, shutting down
+Unable to open logs
+[60G[[0;31mFAILED[0;39m]
+[ec2-user@ip-172-31-5-109 secret]$ service httpd restart[C[1@s[1@u[1@d[1@o[1@ 
+Stopping httpd: [60G[[0;32m  OK  [0;39m]
+Starting httpd: [60G[[0;32m  OK  [0;39m]
+[ec2-user@ip-172-31-5-109 secret]$ chmod[K[K[K[K[Ksudo chmod 604 .ht*
+[ec2-user@ip-172-31-5-109 secret]$ ls -al
+合計 20
+drwxr-xr-x 2 root root 4096  7月 16 23:05 [0m[38;5;27m.[0m
+drwxr-xr-x 3 root root 4096  7月 16 22:53 [38;5;27m..[0m
+-rw----r-- 1 root root  104  7月 16 23:01 .htaccess
+-rw----r-- 1 root root   45  7月 16 23:05 .htpasswd
+-rw-r--r-- 1 root root   54  7月 16 22:56 index.html
+[ec2-user@ip-172-31-5-109 secret]$ exit
+exit
+
+スクリプトは 2017年07月16日 23時08分28秒
+ に終了しましたスクリプトは 2017年07月16日 23時11分28秒
+ に開始しました[ec2-user@ip-172-31-5-109 working]$ less [K[K[K[K[Kvim /etc/httpd/conf/httpd.conf 
+[?1049h[?1h=[1;45r[34l[34h[?25h[23m[24m[0m[H[J[?25l[45;1H"/etc/httpd/conf/httpd.conf" [読込専用] 1010L, 34474C[1;1H[34m#
+# This is the main Apache server configuration file.  It contains the
+# configuration directives that give the server its instructions.
+# See <URL:http://httpd.apache.org/docs/2.2/> for detailed information.
+# In particular, see
+# <URL:http://httpd.apache.org/docs/2.2/mod/directives.html>
+# for a discussion of each configuration directive.
+#
+#
+# Do [0m[30m[103mNOT[0m[34m simply read the instructions in here without understanding
+# what they do.  They're here only as hints or reminders.  If you are unsure
+# consult the online docs. You have been warned.  
+#
+# The configuration directives are grouped into three basic sections:
+#  1. Directives that control the operation of the Apache server process as a
+#     whole (the 'global environment').
+#  2. Directives that define the parameters of the 'main' or 'default' server,[18;1H#     which responds to requests that aren't handled by a virtual host.
+#     These directives also provide default values for the settings
+#     of all virtual hosts.
+#  3. Settings for virtual hosts, which allow Web requests to be sent to
+#     different IP addresses or hostnames and have them handled by the
+#     same Apache server process.
+#
+# Configuration and logfile names: If the filenames you specify for many
+# of the server's control files begin with "/" (or "drive:/" for Win32), the
+# server will use that explicit path.  If the filenames do *not* begin
+# with "/", the value of ServerRoot is prepended -- so "logs/foo.log"
+# with ServerRoot set to "/etc/httpd" will be interpreted by the
+# server as "/etc/httpd/logs/foo.log".
+#
+
+### Section 1: Global Environment
+#
+# The directives in this section affect the overall operation of Apache,
+# such as the number of concurrent requests it can handle or where it
+# can find its configuration files.
+#
+
+#
+# Don't give away too much information about all the subcomponents
+# we are running.  Comment out this line if you don't mind remote sites
+# finding out what major optional modules you are running[0m
+[36mServerTokens[0m [31mOS[0m[45;61H1,1[10C先頭[1;1H[34h[?25h[?25l[45;61H2[2;1H[34h[?25h[?25l[45;61H3[3;1H[34h[?25h[?25l[45;61H4[4;1H[34h[?25h[?25l[45;61H5[5;1H[34h[?25h[?25l[45;61H6[6;1H[34h[?25h[?25l[45;61H7[7;1H[34h[?25h[?25l[45;61H8[8;1H[34h[?25h[?25l[45;61H9[9;1H[34h[?25h[?25l[45;61H10,1[10;1H[34h[?25h[?25l[45;62H1[11;1H[34h[?25h[?25l[45;62H2[12;1H[34h[?25h[?25l[45;62H3[13;1H[34h[?25h[?25l[45;62H4[14;1H[34h[?25h[?25l[45;62H5[15;1H[34h[?25h[?25l[45;62H6[16;1H[34h[?25h[?25l[45;62H7[17;1H[34h[?25h[?25l[45;62H8[18;1H[34h[?25h[?25l[45;62H9[19;1H[34h[?25h[?25l[45;61H20[20;1H[34h[?25h[?25l[45;62H1[21;1H[34h[?25h[?25l[45;62H2[22;1H[34h[?25h[?25l[45;62H3[23;1H[34h[?25h[?25l[45;62H4[24;1H[34h[?25h[?25l[45;62H5[25;1H[34h[?25h[?25l[45;62H6[26;1H[34h[?25h[?25l[45;62H7[27;1H[34h[?25h[?25l[45;62H8[28;1H[34h[?25h[?25l[45;62H9[29;1H[34h[?25h[?25l[45;61H30[30;1H[34h[?25h[?25l[45;62H1[31;1H[34h[?25h[?25l[45;62H2,0-1[32;1H[34h[?25h[?25l[45;62H3,1  [33;1H[34h[?25h[?25l[45;62H4[34;1H[34h[?25h[?25l[45;62H5[35;1H[34h[?25h[?25l[45;62H6[36;1H[34h[?25h[?25l[45;62H7[37;1H[34h[?25h[?25l[45;62H8[38;1H[34h[?25h[?25l[45;62H9,0-1[39;1H[34h[?25h[?25l[45;61H40,1  [40;1H[34h[?25h[?25l[45;62H1[41;1H[34h[?25h[?25l[45;62H2[42;1H[34h[?25h[?25l[45;62H3[43;1H[34h[?25h[?25l[45;62H4[44;1H[34h[?25h[?25l[1;44r[44;1H
+[1;45r[45;1H[K[45;61H45,0-1[9C0%[44;1H[34h[?25h[?25l[1;44r[44;1H
+[1;45r[44;1H[34m#[0m[45;61H[K[45;61H46,1[11C0%[44;1H[34h[?25h[?25l[1;44r[44;1H
+[1;45r[44;1H[34m# ServerRoot: The top of the directory tree under which the server's[0m[45;61H[K[45;61H47,1[11C0%[44;1H[34h[?25h[?25l[1;44r[44;1H
+[1;45r[44;1H[34m# configuration, error, and log files are kept.[0m[45;61H[K[45;61H48,1[11C0%[44;1H[34h[?25h[?25l[1;44r[44;1H
+[1;45r[44;1H[34m#[0m[45;61H[K[45;61H49,1[11C0%[44;1H[34h[?25h[?25l[1;44r[44;1H
+[1;45r[44;1H[34m# NOTE!  If you intend to place this on an NFS (or otherwise network)[0m[45;61H[K[45;61H50,1[11C0%[44;1H[34h[?25h[?25l[1;44r[44;1H
+[1;45r[44;1H[34m# mounted filesystem then please read the LockFile documentation[0m[45;61H[K[45;61H51,1[11C0%[44;1H[34h[?25h[?25l[1;44r[1;1H[2M[1;45r[43;1H[34m# (available at <URL:http://httpd.apache.org/docs/2.2/mod/mpm_common.html#lockk[44;1Hfile>);[0m[45;61H[K[45;61H52,1[11C0%[43;1H[34h[?25h[?25l[1;44r[44;1H
+[1;45r[44;1H[34m# you will save yourself a lot of trouble.[0m[45;61H[K[45;61H53,1[11C1%[44;1H[34h[?25h[?25l[1;44r[44;1H
+[1;45r[44;1H[34m#[0m[45;61H[K[45;61H54,1[11C1%[44;1H[34h[?25h[?25l[1;44r[44;1H
+[1;45r[44;1H[34m# Do [0m[30m[103mNOT[0m[34m add a slash at the end of the directory path.[0m[45;61H[K[45;61H55,1[11C1%[44;1H[34h[?25h[?25l[45;61H[K[45;1H:[34h[?25hw[?25l[34h[?25hq[?25l[34h[?25h[?25l[97m[41mE45: 'readonly' オプションが設定されています (! を追加で上書き)[0m
+[32m続けるにはENTERを押すかコマンドを入力してください[34h[?25h[?25l[0m[45;1H[K[45;1H:[34h[?25h1[?25l[34h[?25h[?25l[45;2H[K[45;2H[34h[?25hq[?25l[34h[?25h![?25l[34h[?25h[?25l[45;1H[K[45;1H[?1l>[34h[?25h[?1049l[ec2-user@ip-172-31-5-109 working]$ vim /etc/httpd/conf/httpd.conf [1@d[1@u[1@d[1P[1P[1P[1@s[1@u[1@d[1@o[1@ 
+[?1049h[?1h=[1;45r[34l[34h[?25h[23m[24m[0m[H[J[?25l[45;1H"/etc/httpd/conf/httpd.conf" 1010L, 34474C[1;1H[34m#
+# This is the main Apache server configuration file.  It contains the
+# configuration directives that give the server its instructions.
+# See <URL:http://httpd.apache.org/docs/2.2/> for detailed information.
+# In particular, see
+# <URL:http://httpd.apache.org/docs/2.2/mod/directives.html>
+# for a discussion of each configuration directive.
+#
+#
+# Do [0m[30m[103mNOT[0m[34m simply read the instructions in here without understanding
+# what they do.  They're here only as hints or reminders.  If you are unsure
+# consult the online docs. You have been warned.  
+#
+# The configuration directives are grouped into three basic sections:
+#  1. Directives that control the operation of the Apache server process as a
+#     whole (the 'global environment').
+#  2. Directives that define the parameters of the 'main' or 'default' server,[18;1H#     which responds to requests that aren't handled by a virtual host.
+#     These directives also provide default values for the settings
+#     of all virtual hosts.
+#  3. Settings for virtual hosts, which allow Web requests to be sent to
+#     different IP addresses or hostnames and have them handled by the
+#     same Apache server process.
+#
+# Configuration and logfile names: If the filenames you specify for many
+# of the server's control files begin with "/" (or "drive:/" for Win32), the
+# server will use that explicit path.  If the filenames do *not* begin
+# with "/", the value of ServerRoot is prepended -- so "logs/foo.log"
+# with ServerRoot set to "/etc/httpd" will be interpreted by the
+# server as "/etc/httpd/logs/foo.log".
+#
+
+### Section 1: Global Environment
+#
+# The directives in this section affect the overall operation of Apache,
+# such as the number of concurrent requests it can handle or where it
+# can find its configuration files.
+#
+
+#
+# Don't give away too much information about all the subcomponents
+# we are running.  Comment out this line if you don't mind remote sites
+# finding out what major optional modules you are running[0m
+[36mServerTokens[0m [31mOS[0m[45;61H1,1[10C先頭[1;1H[34h[?25h[?25l[45;1H[K[45;1H/[34h[?25hh[?25l[34h[?25ht[?25l[34h[?25ha[?25l[34h[?25hc[?25l[34h[?25hc[?25l[34h[?25he[?25l[34h[?25hs[?25l[34h[?25hs[?25l[34h[?25h[?25l[23m[24m[0m[H[J[2;1H[34m#
+# This should be changed to whatever you set DocumentRoot to.
+#[0m
+[38;5;130m<Directory[0m[31m "/var/www/html"[0m[38;5;130m>[0m
+
+[34m#
+# Possible values for the Options directive are "None", "All",
+# or any combination of:
+#   Indexes Includes FollowSymLinks SymLinksifOwnerMatch ExecCGI MultiViews
+#
+# Note that "MultiViews" must be named *explicitly* --- "Options All"
+# doesn't give it to you.
+#
+# The Options directive is both complicated and important.  Please see
+# http://httpd.apache.org/docs/2.2/mod/core.html#options
+# for more information.
+#[0m
+    [36mOptions[0m [31mIndexes[0m [31mFollowSymLinks[0m
+
+[34m#
+# AllowOverride controls what directives may be placed in .[0m[34m[103mhtaccess[0m[34m files.
+# It can be "All", "None", or any combination of the keywords:
+#   Options FileInfo AuthConfig Limit
+#[0m
+    [36mAllowOverride[0m [31mNone[0m
+
+[34m#
+# Controls who can get stuff from this server.
+#[0m
+[35m    Order [0m[31mallow[0m[35m,[0m[31mdeny[0m
+    [35mAllow from [0m[36mall[0m
+
+[38;5;130m</Directory>[0m
+
+[34m#
+# UserDir: The name of the directory that is appended onto a user's home
+# directory if a ~user request is received.
+#
+# The path to the end user account 'public_html' directory must be
+# accessible to the webserver userid.  This usually means that ~userid
+# must have permissions of 711, ~userid/public_html must have permissions
+# of 755, and documents contained therein must be world-readable.
+# Otherwise, the client will only receive a "403 Forbidden" message.[0m[45;61H335,60[8C32%[22;60H[34h[?25h[?25l[45;63H6[23;60H[34h[?25h[?25l[45;63H7,37[24;37H[34h[?25h[?25l[45;63H8,1 [25;1H[34h[?25h[?25l[45;63H9,22[26;22H[34h[?25h[?25l[45;62H40,0-1[27;1H[34h[?25h[?25l[45;63H1,1  [28;1H[34h[?25h[?25l[45;63H0,0-1[27;1H[34h[?25h[?25l[45;62H39,22 [26;22H[34h[?25h[?25l[45;1H[1m-- 挿入 --[0m[45;61H[K[45;61H339,22[8C32%[26;22H[34h[?25h[?25l[45;66H3[26;23H[34h[?25h[?25lNon[26;22H[K[45;66H2[26;22H[34h[?25h[?25l[26;21H[K[45;66H1[26;21H[34h[?25h[?25l[26;20H[K[45;66H0[26;20H[34h[?25h[?25l[26;19H[K[45;65H19[26;19H[34h[?25h[?25lA[45;65H20[26;20H[34h[?25h[?25ll[45;66H1[26;21H[34h[?25h[?25l[31mAll[0m[45;66H2[26;22H[34h[?25h[?25lAl[26;21H[K[45;66H1[26;21H[34h[?25h[?25l[26;20H[K[45;66H0[26;20H[34h[?25h[?25lL[45;66H1[26;21H[34h[?25h[?25l[31mALL[0m[45;66H2[26;22H[34h[?25h[45;1H[K[26;21H[?25l[45;61H339,21[8C32%[26;21H[34h[?25h[?25l[45;61H[K[45;1H:[34h[?25hw[?25l[34h[?25hq[?25l[34h[?25h[?25l"/etc/httpd/conf/httpd.conf" 1010L, 34473C 書込み
+[?1l>[34h[?25h[?1049l[ec2-user@ip-172-31-5-109 working]$ cd /var/log/ht[K[K[K[K[K[Kwww/html/secret/
+[ec2-user@ip-172-31-5-109 secret]$ sudo service httpd restart
+Stopping httpd: [60G[[0;32m  OK  [0;39m]
+Starting httpd: [60G[[0;32m  OK  [0;39m]
+[ec2-user@ip-172-31-5-109 secret]$ curl "http://54.238.237.78/secret/"
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>401 Authorization Required</title>
+</head><body>
+<h1>Authorization Required</h1>
+<p>This server could not verify that you
+are authorized to access the document
+requested.  Either you supplied the wrong
+credentials (e.g., bad password), or your
+browser doesn't understand how to supply
+the credentials required.</p>
+<hr>
+<address>Apache/2.2.32 (Amazon) Server at 54.238.237.78 Port 80</address>
+</body></html>
+[ec2-user@ip-172-31-5-109 secret]$ curl "http://54.238.237.78/secret/"-"http://54.238.237.78/secret/"u"http://54.238.237.78/secret/" "http://54.238.237.78/secret/"a"http://54.238.237.78/secret/"m"http://54.238.237.78/secret/"a"http://54.238.237.78/secret/"z"http://54.238.237.78/secret/"o"http://54.238.237.78/secret/" M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn"http://54.238.237.78/secret/""M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C:"http://54.238.237.78/secret/"M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc"http://54.238.237.78/secret/"M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca"http://54.238.237.78/secret/"M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn"http://54.238.237.78/secret/"M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd"http://54.238.237.78/secret/"M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci"http://54.238.237.78/secret/"M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd"http://54.238.237.78/secret/"M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca"http://54.238.237.78/secret/"M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct"http://54.238.237.78/secret/"M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce"http://54.238.237.78/secret/"M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C "http://54.238.237.78/secret/"M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+<!DOCTYPE HTML>
+<html>
+<body>
+SUCCESS
+</body>
+</html>
+[ec2-user@ip-172-31-5-109 secret]$ sudo vim index.html 
+[?1049h[?1h=[1;45r[34l[34h[?25h[23m[24m[0m[H[J[?25l[45;1H"index.html" 6L, 54C[1;1H[34m<!DOCTYPE HTML>[0m
+[36m<[0m[38;5;130mhtml[0m[36m>
+<[0m[38;5;130mbody[0m[36m>[0m
+SUCCESS
+[36m</[0m[38;5;130mbody[0m[36m>[0m
+[36m[106m<[0m[36m/[0m[38;5;130mhtml[0m[36m[106m>[0m
+[94m~                                                                             [8;1H~                                                                             [9;1H~                                                                             [10;1H~                                                                             [11;1H~                                                                             [12;1H~                                                                             [13;1H~                                                                             [14;1H~                                                                             [15;1H~                                                                             [16;1H~                                                                             [17;1H~                                                                             [18;1H~                                                                             [19;1H~                                                                             [20;1H~                                                                             [21;1H~                                                                             [22;1H~                                                                             [23;1H~                                                                             [24;1H~                                                                             [25;1H~                                                                             [26;1H~                                                                             [27;1H~                                                                             [28;1H~                                                                             [29;1H~                                                                             [30;1H~                                                                             [31;1H~                                                                             [32;1H~                                                                             [33;1H~                                                                             [34;1H~                                                                             [35;1H~                                                                             [36;1H~                                                                             [37;1H~                                                                             [38;1H~                                                                             [39;1H~                                                                             [40;1H~                                                                             [41;1H~                                                                             [42;1H~                                                                             [43;1H~                                                                             [44;1H~                                                                             [0m[45;61H6,1[10C全て[6;1H[34h[?25h[?25l[5;1H[36m[106m<[5C>[0m
+[36m<[5C>[0m[45;61H5[5;1H[34h[?25h[?25l[36m<[5C>[0m[45;61H4[4;1H[34h[?25h[?25l[3;1H[36m[106m<[4C>[0m[45;61H3[3;1H[34h[?25h[?25l[2;1H[36m[106m<[4C>[0m
+[36m<[4C>[0m[45;61H2[2;1H[34h[?25h[?25l[1;1H[34m[106m<[13C>[0m
+[36m<[4C>[0m[45;61H1[1;1H[34h[?25h[?25l[1;44r[44;1H
+[1;45r[1;1H[36m[106m<[4C>[0m[44;1H[94m~                                                                             [0m[45;1H[K[45;61H1,1[10C全て[1;1H[34h[?25h[?25l[1;44r[44;1H
+[1;45r[1;1H[36m[106m<[4C>[0m[44;1H[94m~                                                                             [0m[45;61H[K[45;61H1,1[10C全て[1;1H[34h[?25h[?25l[1;44r[44;1H
+[1;45r[44;1H[94m~                                                                             [0m[45;61H[K[45;61H1,1[10C全て[1;1H[34h[?25h[?25l
+[36m[106m<[5C>[0m[45;61H2[2;1H[34h[?25h[?25l[36m<[5C>[0m
+[36m[106m<[5C>[0m[45;61H3[3;1H[34h[?25h[?25l[2;1H[36m[106m<[5C>[0m
+[94m~                                                                             [0m[45;61H2[2;1H[34h[?25h[?25l[94m~                                                                             [0m[45;61H1[1;1H[34h[?25h[?25l[45;61H[K[45;1H:[34h[?25hw[?25l[34h[?25hq[?25l[34h[?25h[?25l"index.html" 1L, 8C 書込み
+[?1l>[34h[?25h[?1049l[ec2-user@ip-172-31-5-109 secret]$ sudo vim index.html curl -u amazon:candidate "http://54.238.237..78/secret/"
+SUCCESS
+[ec2-user@ip-172-31-5-109 secret]$ exit
+exit
+
+スクリプトは 2017年07月16日 23時14分39秒
+ に終了しました
