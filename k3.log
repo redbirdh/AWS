@@ -1,0 +1,326 @@
+スクリプトは 2017年07月16日 23時31分42秒
+ に開始しました[ec2-user@ip-172-31-5-109 working]$ cd /var/www/html/
+[ec2-user@ip-172-31-5-109 html]$ sudo mkdir calc
+[ec2-user@ip-172-31-5-109 html]$ cdcaK calc/
+[ec2-user@ip-172-31-5-109 calc]$ sudo indKvim indeKx/php
+?25l45;1HK45;1H?1l34h?25h?1049l[ec2-user@ip-172-31-5-109新
+?25l"index.php"5[新
+?1l34h?25h?1049l[ec2-user@ip-172-31-5-109 calc]$ sudo vim /etchK/Khttpd/conf/httpd.conf
+?1049h?1h1;45r34l34h?25h23m24m0mHJ?25l45;1H"/etc/httpd/conf/httpd.conf" 1010L, 34473C1;1H38;5;130m<Directory0m31m "/var/www/html"0m38;5;130m>0m
+
+34m#
+# Possible values for the Options directive are "None", "All",
+# or any combination of:
+#   Indexes Includes FollowSymLinks SymLinksifOwnerMatch ExecCGI MultiViews
+#
+# Note that "MultiViews" must be named *explicitly* --- "Options All"
+# doesn't give it to you.
+#
+# The Options directive is both complicated and important.  Please see
+# http://httpd.apache.org/docs/2.2/mod/core.html#options
+# for more information.
+#0m
+    36mOptions0m 31mIndexes0m 31mFollowSymLinks0m
+
+34m#
+# AllowOverride controls what directives may be placed in .0m34m103mhtaccess0m34m files.
+# It can be "All", "None", or any combination of the keywords:
+#   Options FileInfo AuthConfig Limit
+#0m
+    36mAllowOverride0m 31mALL0m
+
+34m#
+# Controls who can get stuff from this server.
+#0m
+35m    Order 0m31mallow0m35m,0m31mdeny0m
+    35mAllow from 0m36mall0m
+
+38;5;130m</Directory>0m
+
+34m#
+# UserDir: The name of the directory that is appended onto a user's home
+# directory if a ~user request is received.
+#
+# The path to the end user account 'public_html' directory must be
+# accessible to the webserver userid.  This usually means that ~userid
+# must have permissions of 711, ~userid/public_html must have permissions
+# of 755, and documents contained therein must be world-readable.
+# Otherwise, the client will only receive a "403 Forbidden" message.
+#
+# See also: http://httpd.apache.org/docs/misc/FAQ.html#forbidden
+#0m
+?25l23m24m0mHJ1;1H34m#m mod_userdir.c0m38;5;130m>0m45;61H339,59C32%22;5H34h?25h?25l45;1HK45;1H/34h?25hi?25l34h?25hn?25l34h?25hd?25l34h?25he?25l34h?25hx?25l34h?25h.?25l34h?25hh?25l34h?25ht?25l34h?25hm?25l34h?25hl?25l34h?25h
+# Control access to UserDir directories.  The following is an example
+# for a site where these directories are restricted to read-only.
+#
+#<Directory /home/*/public_html>
+#    AllowOverride FileInfo AuthConfig Limit
+#    Options MultiViews Indexes SymLinksIfOwnerMatch IncludesNoExec
+#    <Limit GET POST OPTIONS>
+#        Order allow,deny
+#        Allow from all
+#    </Limit>
+#    <LimitExcept GET POST OPTIONS>
+#        Order deny,allow
+#        Deny from all
+#    </LimitExcept>
+#</Directory>
+
+#
+# DirectoryIndex: sets the file that Apache will serve if a directory
+# is requested.
+#
+# The 0m34m103mindex.html0m34m.var file (a type-map) is used to deliver content-
+# negotiated documents.  The MultiViews Option can be used for the
+# same purpose, but it is much slower.
+#0m
+36mDirectoryIndex0m 103mindex.html0m 103mindex.html0m.var
+
+34m#
+# AccessFileName: The name of the file to look for in each directory
+# for additional configuration directives.  See also the AllowOverride
+# directive.
+#0m
+36mAccessFileName0m .htaccess
+
+34m#
+# The following lines prevent .htaccess and .htpasswd files from being
+# viewed by Web clients.
+#0m
+38;5;130m<Files0m31m ~ "^\.ht"0m38;5;130m>0m
+35m    Order 0m31mallow0m35m,0m31mdeny0m
+    35mDeny from 0m36mall
+0m    36mSatisfy0m 31mAll0m
+?25l2;2H34m103ms7Cデ
+35m103m    5C 0m
+103m    0m4C35m103m 4C 0m
+?25l23m24m0mHJ1;1H34m#,Putting9this4all5together,Hwe5can/internationalize2errorlresponses.5l 34h?25h?25l 34h?25h?25l 34h?25h?25l 34h?25h?25l 34h?25h
+#
+# We use Alias to redirect any /error/HTTP_<error>.html.var response to
+# our collection of by-error message multi-language collections.  We use
+# includes to substitute the appropriate text.
+#
+# You can modify the messages' appearance without changing any of the
+# default HTTP_<error>.html.var files by adding the line:
+#
+#   Alias /error/include/ "/your/include/path/"
+#
+# which allows you to create your own set of files by starting with the
+# /var/www/error/include/ files and
+# copying them to /your/include/path/, even on a per-VirtualHost basis.
+#0m
+
+36mAlias0m /31merror0m/ 31m"/var/www/error/"0m
+
+38;5;130m<IfModule0m31m mod_negotiation.c0m38;5;130m>
+<IfModule0m31m mod_include.c0m38;5;130m>
+0m    38;5;130m<Directory0m31m "/var/www/error"0m38;5;130m>0m
+103m       0m 36mAllowOverride0m 31mNone0m
+103m       0m 36mOptions0m 31mIncludesNoExec0m
+103m       0m 36mAddOutputFilter0m 31mIncludes0m html
+103m       0m 36mAddHandler0m type-31mmap0m var
+35m103m       0m35m Order 0m31mallow0m35m,0m31mdeny0m
+103m       0m 35mAllow from 0m36mall0m
+103m       0m 36mLanguagePriority0m en es de fr
+103m       0m 36mForceLanguagePriority0m Prefer Fallback
+    38;5;130m</Directory>0m
+
+34m#    ErrorDocument 400 /error/HTTP_BAD_REQUEST.html.var
+#    ErrorDocument 401 /error/HTTP_UNAUTHORIZED.html.var
+#    ErrorDocument 403 /error/HTTP_FORBIDDEN.html.var
+#    ErrorDocument 404 /error/HTTP_NOT_FOUND.html.var
+#    ErrorDocument 405 /error/HTTP_METHOD_NOT_ALLOWED.html.var
+#    ErrorDocument 408 /error/HTTP_REQUEST_TIME_OUT.html.var
+#    ErrorDocument 410 /error/HTTP_GONE.html.var
+#    ErrorDocument 411 /error/HTTP_LENGTH_REQUIRED.html.var
+#    ErrorDocument 412 /error/HTTP_PRECONDITION_FAILED.html.var
+#    ErrorDocument 413 /error/HTTP_REQUEST_ENTITY_TOO_LARGE.html.var
+#    ErrorDocument 414 /error/HTTP_REQUEST_URI_TOO_LARGE.html.var
+#    ErrorDocument 415 /error/HTTP_UNSUPPORTED_MEDIA_TYPE.html.var
+?25l"/etc/httpd/conf/httpd.conf"T1010L,R34483CR書
+?1l34h?25h?1049l[ec2-user@ip-172-31-5-109 calc]$ sudo service httpd restart
+Stopping httpd: 60G[0;32m  OK  0;39m]
+Starting httpd: 60G[0;32m  OK  0;39m]
+[ec2-user@ip-172-31-5-109 calc]$ sudo yum install php
+読み込んだプラグイン:priorities, update-motd, upgrade-helper
+amzn-main                                              | 2.1 kB     00:00
+amzn-updates                                           | 2.3 kB     00:00
+依存性の解決をしています
+--> トランザクションの確認を実行しています。
+---> パッケージ php.x86_64 0:5.3.29-1.8.amzn1 を インストール
+--> 依存性の処理をしています: php-common(x86-64) = 5.3.29-1.8.amzn1 のパッケージ: php-5.3.29-1.8.amzn1.x86_64
+--> 依存性の処理をしています: php-cli(x86-64) = 5.3.29-1.8.amzn1 のパッケージ: php-5.3.29-1.8.amzn1.x86_64
+--> 依存性の処理をしています: libgmp.so.3()(64bit) のパッケージ: php-5.3.29-1.8.amzn1.x86_64
+--> トランザクションの確認を実行しています。
+---> パッケージ compat-gmp4.x86_64 0:4.3.2-1.14.amzn1 を インストール
+---> パッケージ php-cli.x86_64 0:5.3.29-1.8.amzn1 を インストール
+---> パッケージ php-common.x86_64 0:5.3.29-1.8.amzn1 を インストール
+--> 依存性解決を終了しました。
+
+依存性を解決しました
+
+==============================================================================
+ Package           アーキテクチャー
+                                バージョン              リポジトリー     容量
+==============================================================================
+インストール中:
+ php               x86_64       5.3.29-1.8.amzn1        amzn-main       2.8 M
+依存性関連でのインストールをします:
+ compat-gmp4       x86_64       4.3.2-1.14.amzn1        amzn-main       302 k
+ php-cli           x86_64       5.3.29-1.8.amzn1        amzn-main       2.6 M
+ php-common        x86_64       5.3.29-1.8.amzn1        amzn-main       1.0 M
+
+トランザクションの要約
+==============================================================================
+インストール  1 パッケージ (+3 個の依存関係のパッケージ)
+
+総ダウンロード容量: 6.7 M
+インストール容量: 21 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/4): compat-gmp4-4.3.2-1.14.amzn1.x86_64.rpm           | 302 kB   00:00
+(2/4): php-5.3.29-1.8.amzn1.x86_64.rpm        ]  0.0 B/s | 2.8 MB   00:00 ETA
+(3/4): php-cli-5.3.29-1.8.amzn1.x86_64.rpm               | 2.6 MB   00:00
+(4/4): php-common-5.3.29-1.8.amzn1.x86_64.rpm            | 1.0 MB   00:00
+------------------------------------------------------------------------------
+合計                                             7.9 MB/s | 6.7 MB  00:00
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  インストール中          : compat-gmp4-4.3.2-1.14.amzn1.x86_64######## ] 1/4
+  インストール中          : php-common-5.3.29-1.8.amzn1.x86_64######### ] 2/4
+  インストール中          : php-cli-5.3.29-1.8.amzn1.x86_64############ ] 3/4
+  インストール中          : php-5.3.29-1.8.amzn1.x86_64################ ] 4/4
+  検証中                  : php-common-5.3.29-1.8.amzn1.x86_64            1/4
+  検証中                  : php-cli-5.3.29-1.8.amzn1.x86_64               2/4
+  検証中                  : compat-gmp4-4.3.2-1.14.amzn1.x86_64           3/4
+  検証中                  : php-5.3.29-1.8.amzn1.x86_64                   4/4
+
+インストール:
+  php.x86_64 0:5.3.29-1.8.amzn1
+
+依存性関連をインストールしました:
+  compat-gmp4.x86_64 0:4.3.2-1.14.amzn1   php-cli.x86_64 0:5.3.29-1.8.amzn1
+  php-common.x86_64 0:5.3.29-1.8.amzn1
+
+完了しました!
+[ec2-user@ip-172-31-5-109 calc]$ php -v
+PHP 5.3.29 (cli) (built: May 12 2015 22:42:19)
+Copyright (c) 1997-2014 The PHP Group
+Zend Engine v2.3.0, Copyright (c) 1998-2014 Zend Technologies
+[ec2-user@ip-172-31-5-109 calc]$ sudo-6Pvimv18Pindex.phponf/httpd.conf
+?1049h?1h1;45r34l34h?25h23m24m0mHJ?25l45;1H"index.php" 5L, 22C1;1H35m<?php0m
+
+35mecho0m 38;5;130m$0m36m_GET0m
+
+35m?>0m
+?25l"index.php"65L,322C3書
+?1l34h?25h?1049l[ec2-user@ip-172-31-5-109 calc]$ 12Psudo-servicethttpdhrestart
+Stopping httpd: 60G[0;32m  OK  0;39m]
+Starting httpd: 60G[0;32m  OK  0;39m]
+[ec2-user@ip-172-31-5-109 calc]$ sudo 8Pvimcindex.phpestart
+?1049h?1h1;45r34l34h?25h23m24m0mHJ?25l45;1H"index.php" 5L, 22C1;1H35m<?php0m
+
+36mphpinfo0m35m()0m;
+
+35m?>0m
+94m~                                                                             7;1H~                                                                             8;1H~                                                                             9;1H~                                                                             10;1H~                                                                             11;1H~                                                                             12;1H~                                                                             13;1H~                                                                             14;1H~                                                                             15;1H~                                                                             16;1H~                                                                             17;1H~                                                                             18;1H~                                                                             19;1H~                                                                             20;1H~                                                                             21;1H~                                                                             22;1H~                                                                             23;1H~                                                                             24;1H~                                                                             25;1H~                                                                             26;1H~                                                                             27;1H~                                                                             28;1H~                                                                             29;1H~                                                                             30;1H~                                                                             31;1H~                                                                             32;1H~                                                                             33;1H~                                                                             34;1H~                                                                             35;1H~                                                                             36;1H~                                                                             37;1H~                                                                             38;1H~                                                                             39;1H~                                                                             40;1H~                                                                             41;1H~                                                                             42;1H~                                                                             43;1H~                                                                             44;1H~                                                                             0m45;61H3,110C全て3;1H34h?25h?25l45;61H4,0-14;1H34h?25h?25l45;61H3,1  3;1H34h?25h?25l3;44r44;1H
+35mecho0m45;63H53;5H34h?25h?25l45;63H63;6H34h?25h?25l38;5;130m$0m45;63H73;7H34h?25h?25l36m_0m45;63H83;8H34h?25h?25l36mG0m45;63H93;9H34h?25h?25l36mE0m45;63H103;10H34h?25h?25l36mT0m45;64H13;11H34h?25h?25l4;44r4;1HL1;45r45;61HK45;61H4,110C全
+35mecho0m45;63H54;5H34h?25h?25l45;63H64;6H34h?25h?25le45;63H74;7H34h?25h?25ln45;63H84;8H34h?25h?236mend0m45;63H94;9H34h?25h?en4;8HK45;63H84;8H34h?25h?25l4;7HK45;63H74;7H34h?25h?25l4;6HK45;63H64;6H34h?25h?25le45;63H74;7H34h?25h?25ln45;63H84;8H34h?25h?236mend0m45;63H94;9H34h?25h?25l;45;63H104;10H34h?25h?25l45;63H9 4;9H34h?25h?25l31m";
+
+?>0m45;63H104;10H34h?25h?25l45;63H9 4;9H34h?25h?25l45;63H84;8H34h?25h?25l45;63H74;7H34h?25h?25l45;63H64;6H34h?25h?25l31m"end"0m;
+
+?25l"index.php";6L,435C5書
+?1l34h?25h?1049l[ec2-user@ip-172-31-5-109 calc]$ sudo vim index.php
+?1049h?1h1;45r34l34h?25h23m24m0mHJ?25l45;1H"index.php" 6L, 35C1;1H35m<?php0m
+
+35mecho0m 38;5;130m$0m36m_GET0m;
+35mecho0m 31m"end"0m;
+
+35m?>0m
+?25l"index.php" 6L, 40C 書込み                                                   8;1H~                                                                             9;1H~                                                                             10;1H~                                                                             11;1H~                                                                             12;1H~                                                                             13;1H~                                                                             14;1H~                                                                             15;1H~                                                                             16;1H~                                                                             17;1H~                                                                             18;1H~                                                                             19;1H~                                                                             20;1H~                                                                             21;1H~                                                                             22;1H~                                                                             23;1H~                                                                             24;1H~                                                                             25;1H~                                                                             26;1H~                                                                             27;1H~                                                                             28;1H~                                                                             29;1H~                                                                             30;1H~                                                                             31;1H~                                                                             32;1H~                                                                             33;1H~                                                                             34;1H~                                                                             35;1H~                                                                             36;1H~                                                                             37;1H~                                                                             38;1H~                                                                             39;1H~                                                                             40;1H~                                                                             41;1H~                                                                             42;1H~                                                                             43;1H~                                                                             44;1H~                                                                             0m45;61H4,110C全て4;1H34h?25h?25l45;61H5,0-15;1H34h?25h?25l45;61H6,1  6;1H34h?25h?25l45;61H5,0-15;1H34h?25h?25l45;61H4,1  4;1H34h?25h?25l45;63H24;2H34h?25h?25l45;63H34;3H34h?25h?25l45;63H44;4H34h?25h?25l45;63H54;5H34h?25h?25l45;63H64;6H34h?25h?25l45;63H74;7H34h?25h?25l45;63H84;8H34h?25h?25l45;63H94;9H34h?25h?25l45;61H33;9H34h?25h?25l45;63H103;10H34h?25h?25l45;64H13;11H34h?25h?25l45;1H1m-- 挿入 --0m45;11HK45;61H3,119C全て3;11H34h?25h?25l38;5;130m<038;5;130m106m<0m6;2H35m106m>0m45;64H23;12H34h?25h?25l38;5;130m/38;5;130m<0m6;2H35m>0m45;64H33;13H34h?25h?25lb;45;64H43;14H34h?25h?25lr;45;64H53;15H34h?25h?25l38;5;1338;5;130m106m<3C>0m45;64H63;16H34h?25h45;1HK3;15H?25l45;61H3,159C全て3;15H34h?25h38;5;130m</0mbr38;5;130m>0m45;61H4,114;11H34h?25h?25l45;61H5,0-15;1H34h?25h?25l45;61H4,11 4;11H34h?25h?25l3;11H38;5;130m106m<3C>0m45;61H3,153;15H34h?25h38;5;130m</0mbr38;5;130m>0m45;61H2,0-12;1H34h?25h?25l3;11H38;5;130m106m<3C>0m45;61H3,15 3;15H34h?25h38;5;130m</0mbr38;5;130m>0m45;61H4,114;11H34h?25h?25l45;61HK45;1H:34h?25hw?25l34h?25hq?25l34h?25h
+?1l34h?25h?1049l[ec2-user@ip-172-31-5-109 calc]$ sudo vim index.php
+?1049h?1h1;45r34l34h?25h23m24m0mHJ?25l45;1H"index.php" 6L, 40C1;1H35m<?php0m
+
+35mecho0m 38;5;130m$0m36m_GET0m38;5;130m</0mbr38;5;130m>0m;
+35mecho0m 31m"end"0m;
+
+35m?>0m
+?25l"index.php" 6L, 36C 書込み                                                   8;1H~                                                                             9;1H~                                                                             10;1H~                                                                             11;1H~                                                                             12;1H~                                                                             13;1H~                                                                             14;1H~                                                                             15;1H~                                                                             16;1H~                                                                             17;1H~                                                                             18;1H~                                                                             19;1H~                                                                             20;1H~                                                                             21;1H~                                                                             22;1H~                                                                             23;1H~                                                                             24;1H~                                                                             25;1H~                                                                             26;1H~                                                                             27;1H~                                                                             28;1H~                                                                             29;1H~                                                                             30;1H~                                                                             31;1H~                                                                             32;1H~                                                                             33;1H~                                                                             34;1H~                                                                             35;1H~                                                                             36;1H~                                                                             37;1H~                                                                             38;1H~                                                                             39;1H~                                                                             40;1H~                                                                             41;1H~                                                                             42;1H~                                                                             43;1H~                                                                             44;1H~                                                                             0m45;61H4,110C全て4;1H34h?25h?25l45;61H5,0-15;1H34h?25h?25l45;61H6,1  6;1H34h?25h?25l45;61H5,0-15;1H34h?25h?25l45;61H4,1  4;1H34h?25h?25l45;63H24;2H34h?25h?25l45;63H34;3H34h?25h?25l45;63H44;4H34h?25h?25l45;63H54;5H34h?25h?25l45;63H64;6H34h?25h?25l45;61H33;6H34h?25h?25l45;63H73;7H34h?25h?25l45;63H83;8H34h?25h?25l45;63H93;9H34h?25h?25l45;63H103;10H34h?25h?25l1C38;5;130m106m<3C>0m45;64H13;11H34h?25h?25l38;5;130m/0mbr38;5;130m>0m;3;16HK3;11H34h?25h?25l36mbr0m38;5;130m>0m;3;15HK3;11H34h?25h?25l36mr0m38;5;130m>0m;3;14HK3;11H34h?25h?25l1;1H35m106m<0m3;11H38;5;130m106m>0m;3;13HK3;11H34h?25h?25l1;1H35m<0m3;11H;3;12HK3;11H34h?25h?25l45;61H44;11H34h?25h?25l45;64H04;10H34h?25h?25l45;61H33;10H34h?25h?25l45;61H2,0-12;1H34h?25h?25l45;61H3,10 3;10H34h?25h?25l45;61H44;10H34h?25h?25l45;61H5,0-15;1H34h?25h?25l1;1H35m106m<6;2H>0m45;61H6,2  6;2H34h?25h?25l1;1H35m<6;2H>0m45;61H5,0-15;1H34h?25h?25l45;61H4,10 4;10H34h?25h?25l45;63H9 4;9H34h?25h?25l45;63H84;8H34h?25h?25l45;63H74;7H34h?25h?25l45;1H1m-- 挿入 --0m45;11HK45;61H4,710C全て4;7H34h?25h?25l31m end"0m;45;63H84;8H34h?25h45;1HK4;7H?25l45;61H4,710C全て4;7H34h?25h?25l45;61HK45;1H:34h?25hw?25l34h?25hq?25l34h?25h
+?1l34h?25h?1049l[ec2-user@ip-172-31-5-109 calc]$ Kcurlv"httpK://54.238.237.78/calc?fooba111111Phogehoge"
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://54.238.237.78/calc/?hogehoge">here</a>.</p>
+<hr>
+<address>Apache/2.2.32 (Amazon) Server at 54.238.237.78 Port 80</address>
+</body></html>
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC23Psudot8Pvimcindex.phpestartlc?hogehoge"
+?1049h?1h1;45r34l34h?25h23m24m0mHJ?25l45;1H"index.php" 6L, 36C1;1H35m<?php0m
+
+35mecho0m 38;5;130m$0m36m_GET0m;
+35mecho0m 31m" end"0m;
+
+35m?>0m
+94m~                                                                             8;1H~                                                                             9;1H~                                                                             10;1H~                                                                             11;1H~                                                                             12;1H~                                                                             13;1H~                                                                             14;1H~                                                                             15;1H~                                                                             16;1H~                                                                             17;1H~                                                                             18;1H~                                                                             19;1H~                                                                             20;1H~                                                                             21;1H~                                                                             22;1H~                                                                             23;1H~                                                                             24;1H~                                                                             25;1H~                                                                             26;1H~                                                                             27;1H~                                                                             28;1H~                                                                             29;1H~                                                                             30;1H~                                                                             31;1H~                                                                             32;1H~                                                                             33;1H~                                                                             34;1H~                                                                             35;1H~                                                                             36;1H~                                                                             37;1H~                                                                             38;1H~                                                                             39;1H~                                                                             40;1H~                                                                             41;1H~                                                                             42;1H~                                                                             43;1H~                                                                             44;1H~                                                                             0m45;61H4,110C全て4;1H34h?25h?25l45;61H5,0-15;1H34h?25h?25l45;61H6,1  6;1H34h?25h?25l45;61H5,0-15;1H34h?25h?25l45;61H4,1  4;1H34h?25h?25l45;61H33;1H34h?25h?25l45;63H23;2H34h?25h?25l45;63H33;3H34h?25h?25l45;63H43;4H34h?25h?25l45;63H53;5H34h?25h?25l45;63H63;6H34h?25h?25l45;63H73;7H34h?25h?25l45;63H83;8H34h?25h?25l45;63H93;9H34h?25h?25l45;63H103;10H34h?25h?25l45;61H2,0-12;1H34h?25h?25l2;44r44;1H
+1;45r44;1H94m~                                                                             0m45;1HK45;61H2,110C全て2;1H34h?25h?25l45;61H33;1H34h?25h?25l3;44r44;1H
+1;45r44;1H94m~                                                                             0m45;61HK45;61H3,0-18C全て3;1H34h?25h?25l45;61H4,1  4;1H34h?25h?25l45;61H3,0-13;1H34h?25h?25l3;44r44;1H
+?25l"index.php" 3L, 26C 書込み                                                             0m45;61HK45;61H3,110C全て3;1H34h?25h?25l45;61H22;1H34h?25h?25l45;63H22;2H34h?25h?25l45;63H32;3H34h?25h?25l45;63H42;4H34h?25h?25l45;63H52;5H34h?25h?25l45;63H62;6H34h?25h?25l45;63H72;7H34h?25h?25l45;63H82;8H34h?25h?25l45;63H92;9H34h?25h?25l45;63H102;10H34h?25h?25l45;64H12;11H34h?25h?25l45;1H1m-- 挿入 --0m45;61HK45;61H2,119C全て2;11H34h?25h?25l35m[0m;45;64H22;12H34h?25h?25lf;45;64H32;13H34h?25h?25lo;45;64H42;14H34h?25h?25lo;45;64H52;15H34h?25h?25l335m106m[0mfoo35m106m]0m45;64H62;16H34h?25h45;1HK2;15H?25l45;61H2,159C全て2;15H34h?25h?25l1;1H35m106m<0m2;11H35m[0mfoo35m]0m3;2H35m106m>0m45;61H3,2 3;2H34h?25h?25l1;1H35m<0m2;11H35m106m[0mfoo35m106m]0m3;2H35m>0m45;61H2,152;15H34h?25h35m[0mfoo35m]0m45;61H1,5 1;5H34h?25h?25l2;11H35m106m[0mfoo35m106m]0m45;61H2,152;15H34h?25h?25l45;61HK45;1H:34h?25hw?25l34h?25hq?25l34h?25h
+?1l34h?25h?1049l[ec2-user@ip-172-31-5-109 calc]$ sudo vim index.php
+?1049h?1h1;45r34l34h?25h23m24m0mHJ?25l45;1H"index.php" 3L, 26C1;1H35m<?php0m
+35mecho0m 38;5;130m$0m36m_GET0m35m[0mfoo35m]0m;
+35m?>0m
+94m~                                                                             5;1H~                                                                             6;1H~                                                                             7;1H~                                                                             8;1H~                                                                             9;1H~                                                                             10;1H~                                                                             11;1H~                                                                             12;1H~                                                                             13;1H~                                                                             14;1H~                                                                             15;1H~                                                                             16;1H~                                                                             17;1H~                                                                             18;1H~                                                                             19;1H~                                                                             20;1H~                                                                             21;1H~                                                                             22;1H~                                                                             23;1H~                                                                             24;1H~                                                                             25;1H~                                                                             26;1H~                                                                             27;1H~                                                                             28;1H~                                                                             29;1H~                                                                             30;1H~                                                                             31;1H~                                                                             32;1H~                                                                             33;1H~                                                                             34;1H~                                                                             35;1H~                                                                             36;1H~                                                                             37;1H~                                                                             38;1H~                                                                             39;1H~                                                                             40;1H~                                                                             41;1H~                                                                             42;1H~                                                                             43;1H~                                                                             44;1H~                                                                             0m45;61H2,110C全て2;1H34h?25h?25l45;61H33;1H34h?25h?25l1;1H35m106m<3;2H>0m45;63H23;2H34h?25h?25l1;1H35m<
+
+?25l"index.php"33L,221C2書
+?1l34h?25h?1049l[ec2-user@ip-172-31-5-109 calc]$ exit
+exit
+
+スクリプトは 2017年07月16日 23時45分35秒
+ に終了しましたスクリプトは 2017年07月17日 00時57分39秒
+ に開始しました[ec2-user@ip-172-31-5-109 working]$ cd /vaKr/Kwww/paKhtKml/calc/
+[ec2-user@ip-172-31-5-109 calc]$ vimKsudo vim index.php
+?1049h?1h1;45r34l34h?25h23m24m0mHJ?25l45;1H"index.php" 11L, 202C1;1H35m<?php0m
+38;5;130m$0m36mquery0m 38;5;130m=0m 38;5;130m$0m36m_SERVER0m35m[0m31m'QUERY_STRING'0m35m]0m;
+34m// echo "<h1>".$query."</h1>";0m
+
+38;5;130mif0m35m(0m36mpreg_match0m35m(0m31m"/\A[0-9\(\)\+\-\*\/]+\z/"0m, 38;5;130m$0m36mquery0m35m)){0m6;9H38;5;130m$0m36mkekka0m 38;5;130m=0m 38;5;130meval0m35m(0m31m"return 0m35m{0m38;5;130m$0m36mquery0m35m}0m31m;"0m35m)0m;7;9H35mecho0m 38;5;130m$0m36mkekka0m;
+35m}0m38;5;130melse0m35m{0m9;9H35mecho0m 31m"ERROR"0m;
+35m}
+?>0m
+94m~                                                                             13;1H~                                                                             14;1H~                                                                             15;1H~                                                                             16;1H~                                                                             17;1H~                                                                             18;1H~                                                                             19;1H~                                                                             20;1H~                                                                             21;1H~                                                                             22;1H~                                                                             23;1H~                                                                             24;1H~                                                                             25;1H~                                                                             26;1H~                                                                             27;1H~                                                                             28;1H~                                                                             29;1H~                                                                             30;1H~                                                                             31;1H~                                                                             32;1H~                                                                             33;1H~                                                                             34;1H~                                                                             35;1H~                                                                             36;1H~                                                                             37;1H~                                                                             38;1H~                                                                             39;1H~                                                                             40;1H~                                                                             41;1H~                                                                             42;1H~                                                                             43;1H~                                                                             44;1H~                                                                             0m45;61H11,19C全て11;1H34h?25h?25l8;6H35m106m{
+
+}0m45;62H010;1H34h?25h?25l8;6H35m{
+
+}0m45;61H9,1-89;8H34h?25h?25l5;51H35m106m{
+
+
+}0m45;61H8,1  8;1H34h?25h?25l5;51H35m{
+
+
+?25l"index.php";11L,h202C?書
+?1l34h?25h?1049l[ec2-user@ip-172-31-5-109 calc]$ curl 'http://54.238.237.78/calc?abc'
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://54.238.237.78/calc/?abc">here</a>.</p>
+<hr>
+<address>Apache/2.2.32 (Amazon) Server at 54.238.237.78 Port 80</address>
+</body></html>
+[ec2-user@ip-172-31-5-109 calc]$ curl 'http://54.2CCCCCCCCCCCCCC/?abc'
+ERROR[ec2-user@ip-172-31-5-109 calc]$ curl 'http://54.238.237.78/calc/?ab111P1+1'
+2[ec2-user@ip-172-31-5-109 calc]$ curl 'http://54.238.237.78/calc/?1+111P2-1'
+1[ec2-user@ip-172-31-5-109 calc]$ curl 'http://54.238.237.78/calc/?2-111P3*2'
+6[ec2-user@ip-172-31-5-109 calc]$ curl 'http://54.238.237.78/calc/?3*111P4/2'
+2[ec2-user@ip-172-31-5-109 calc]$ curl 'http://54.238.237.78/calc/?4/111P1+2*3'
+7[ec2-user@ip-172-31-5-109 calc]$ curl 'http://54.238.237.78/calc/?1+2*11111P(1+2)*3'
+9[ec2-user@ip-172-31-5-109 calc]$ exiKt
+exit
+
+スクリプトは 2017年07月17日 01時02分00秒
+ に終了しました

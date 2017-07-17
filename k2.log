@@ -1,0 +1,306 @@
+スクリプトは 2017年07月16日 22時53分00秒
+ に開始しました[ec2-user@ip-172-31-5-109 working]$ cd /dev/www/htKcaKvar/www/html
+[ec2-user@ip-172-31-5-109 html]$ mkdir secret
+mkdir: ディレクトリ `secret' を作成できません: 許可がありません
+[ec2-user@ip-172-31-5-109 html]$ 1@s1@u1@d1@o1@
+[ec2-user@ip-172-31-5-109 html]$ cd secret/
+[ec2-user@ip-172-31-5-109 secret]$ sudo index.hKtmKsudo index.html
+sudo: index.html: コマンドが見つかりません
+[ec2-user@ip-172-31-5-109 secret]$ sudo vCmiindex.html
+?25l"index.html"6[新
+?1l34h?25h?1049l[ec2-user@ip-172-31-5-109 secret]$ sudo vim .htaccess
+?25l".htaccess"H[新
+?1l34h?25h?1049l[ec2-user@ip-172-31-5-109 secret]$ sudo vim .htaccesKpasswd
+?25l45;1HK45;1H?1l34h?25h?1049l[ec2-user@ip-172-31-5-109新
+0m38;5;27m.0m  38;5;27m..0m  .htaccess  index.html
+sswd-user@ip-172-31-5-109 secret]$ sudo htKpasswd -c /var/www/html/secret/K.htpa
+Usage:
+        htpasswd [-cmdpsD] passwordfile username
+        htpasswd -b[cmdpsD] passwordfile username password
+
+        htpasswd -n[mdps] username
+        htpasswd -nb[mdps] username password
+ -c  Create a new file.
+ -n  Don't update file; display results on stdout.
+ -m  Force MD5 encryption of the password (default).
+ -d  Force CRYPT encryption of the password.
+ -p  Do not encrypt the password (plaintext).
+ -s  Force SHA encryption of the password.
+ -b  Use the password from the command line rather than prompting for it.
+ -D  Delete the specified user.
+On other systems than Windows, NetWare and TPF the '-p' flag will probably not work.
+The SHA algorithm does not use a salt and is less secure than the MD5 algorithm.
+[ec2-user@ip-172-31-5-109 secret]$ man htpasswd
+HTPASSWD(1)                       htpasswd                       HTPASSWD(1)m
+m
+01;38;5;208mNAME0mm
+       htpasswd - Manage user files for basic authenticationm
+m
+01;38;5;208mSYNOPSIS0mm
+       01;38;5;208mhtpasswd0m [ -01;38;5;208mc0m ] [ -01;38;5;208mm0m ] [ -01;38;5;208mD0m ] 04;38;5;111mpasswdfile0m 04;38;5;111musername0mm
+m
+       01;38;5;208mhtpasswd0m  -01;38;5;208mb0m  [ -01;38;5;208mc0m ] [ -01;38;5;208mm0m | -01;38;5;208md0m | -01;38;5;208mp0m | -01;38;5;208ms0m ] [ -01;38;5;208mD0m ] 04;38;5;111mpasswdfile0m 04;38;5;111musername0mm
+       04;38;5;111mpassword0mm
+m
+       01;38;5;208mhtpasswd0m -01;38;5;208mn0m [ -01;38;5;208mm0m | -01;38;5;208md0m | -01;38;5;208ms0m | -01;38;5;208mp0m ] 04;38;5;111musername0mm
+m
+       01;38;5;208mhtpasswd0m -01;38;5;208mnb0m [ -01;38;5;208mm0m | -01;38;5;208md0m | -01;38;5;208ms0m | -01;38;5;208mp0m ] 04;38;5;111musername0m 04;38;5;111mpassword0mm
+m
+01;38;5;208mSUMMARY0mm
+       htpasswd is used to create and update the flat-files  used  to  storem
+       usernames  and  password  for  basic authentication of HTTP users. Ifm
+       htpasswd cannot access a file, such as not being able to write to them
+       output file or not being able to read the file in order to update it,m
+       it returns an error status and makes no changes.m
+m
+       Resources available from the Apache HTTP server can be restricted  tom
+       just  the users listed in the files created by htpasswd. This programm
+       can only manage usernames and passwords stored in a flat-file. It canm
+       encrypt  and  display  password information for use in other types ofm
+       data stores, though. To use a DBM database see dbmmanage.m
+m
+       htpasswd encrypts passwords using either a version  of  MD5  modifiedm
+       for  Apache,  or  the  system's  crypt()  routine.  Files  managed bym
+       htpasswd may contain both types of passwords; some user  records  maym
+       have  MD5-encrypted  passwords while others in the same file may havem
+       passwords encrypted with crypt().m
+m
+       This manual page only lists the command line arguments.  For  detailsm
+       of the directives necessary to configure user authentication in httpdm
+       see the Apache manual, which is part of the  Apache  distribution  orm
+       can be found at http://httpd.apache.org/.m
+m
+01;38;5;208mOPTIONS0mm
+       -b     Use  batch  mode; 04;38;5;111mi.e.0m, get the password from the command linem
+              rather than prompting for it. This option should be used  withm
+              extreme  care,  since  01;38;5;208mthe0m  01;38;5;208mpassword0m 01;38;5;208mis0m 01;38;5;208mclearly0m 01;38;5;208mvisible0m on them
+              command line.m
+sswd?amazonec2-user@ip-172-31-5-109psecret]$osudohhtpasswdo-cu/var/www/html/secret/.htpas
+New password:
+Re-type new password:
+Adding password for user amazon
+[ec2-user@ip-172-31-5-109 secret]$ ls -Kls -a
+0m38;5;27m.0m  38;5;27m..0m  .htaccess  .htpasswd  index.html
+[ec2-user@ip-172-31-5-109 secret]$ less .hKtK[Kpasswd
+amazon:$apr1$HdxqrLcy$dWMAX/WDdpwn5ciHFfz150
+K?1l?1049l[ec2-user@ip-172-31-5-109 secret]$ ls -Kal
+合計 20
+drwxr-xr-x 2 root root 4096  7月 16 23:05 0m38;5;27m.0m
+drwxr-xr-x 3 root root 4096  7月 16 22:53 38;5;27m..0m
+-rw-r--r-- 1 root root  104  7月 16 23:01 .htaccess
+-rw-r--r-- 1 root root   45  7月 16 23:05 .htpasswd
+-rw-r--r-- 1 root root   54  7月 16 22:56 index.html
+[ec2-user@ip-172-31-5-109 secret]$ service httpd restart
+Stopping httpd: 60G[0;31mFAILED0;39m]
+Starting httpd: (13)Permission denied: make_sock: could not bind to address [::]:80
+(13)Permission denied: make_sock: could not bind to address 0.0.0.0:80
+no listening sockets available, shutting down
+Unable to open logs
+60G[0;31mFAILED0;39m]
+[ec2-user@ip-172-31-5-109 secret]$ C1@1@u1@d1@o1@restart
+Stopping httpd: 60G[0;32m  OK  0;39m]
+Starting httpd: 60G[0;32m  OK  0;39m]
+[ec2-user@ip-172-31-5-109 secret]$ chmoKsudo chmod 604 .ht*
+[ec2-user@ip-172-31-5-109 secret]$ ls -al
+合計 20
+drwxr-xr-x 2 root root 4096  7月 16 23:05 0m38;5;27m.0m
+drwxr-xr-x 3 root root 4096  7月 16 22:53 38;5;27m..0m
+-rw----r-- 1 root root  104  7月 16 23:01 .htaccess
+-rw----r-- 1 root root   45  7月 16 23:05 .htpasswd
+-rw-r--r-- 1 root root   54  7月 16 22:56 index.html
+[ec2-user@ip-172-31-5-109 secret]$ exit
+exit
+
+スクリプトは 2017年07月16日 23時08分28秒
+ に終了しましたスクリプトは 2017年07月16日 23時11分28秒
+ に開始しました[ec2-user@ip-172-31-5-109 working]$ lessKvim /etc/httpd/conf/httpd.conf
+?1049h?1h1;45r34l34h?25h23m24m0mHJ?25l45;1H"/etc/httpd/conf/httpd.conf" [読込専用] 1010L, 34474C1;1H34m#
+# This is the main Apache server configuration file.  It contains the
+# configuration directives that give the server its instructions.
+# See <URL:http://httpd.apache.org/docs/2.2/> for detailed information.
+# In particular, see
+# <URL:http://httpd.apache.org/docs/2.2/mod/directives.html>
+# for a discussion of each configuration directive.
+#
+#
+# Do 0m30m103mNOT0m34m simply read the instructions in here without understanding
+# what they do.  They're here only as hints or reminders.  If you are unsure
+# consult the online docs. You have been warned.
+#
+# The configuration directives are grouped into three basic sections:
+#  1. Directives that control the operation of the Apache server process as a
+#     whole (the 'global environment').
+#  2. Directives that define the parameters of the 'main' or 'default' server,18;1H#     which responds to requests that aren't handled by a virtual host.
+#     These directives also provide default values for the settings
+#     of all virtual hosts.
+#  3. Settings for virtual hosts, which allow Web requests to be sent to
+#     different IP addresses or hostnames and have them handled by the
+#     same Apache server process.
+#
+# Configuration and logfile names: If the filenames you specify for many
+# of the server's control files begin with "/" (or "drive:/" for Win32), the
+# server will use that explicit path.  If the filenames do *not* begin
+# with "/", the value of ServerRoot is prepended -- so "logs/foo.log"
+# with ServerRoot set to "/etc/httpd" will be interpreted by the
+# server as "/etc/httpd/logs/foo.log".
+#
+
+### Section 1: Global Environment
+#
+# The directives in this section affect the overall operation of Apache,
+# such as the number of concurrent requests it can handle or where it
+# can find its configuration files.
+#
+
+#
+# Don't give away too much information about all the subcomponents
+# we are running.  Comment out this line if you don't mind remote sites
+# finding out what major optional modules you are running0m
+36mServerTokens0m 31mOS0m45;61H1,110C先頭1;1H34h?25h?25l45;61H22;1H34h?25h?25l45;61H33;1H34h?25h?25l45;61H44;1H34h?25h?25l45;61H55;1H34h?25h?25l45;61H66;1H34h?25h?25l45;61H77;1H34h?25h?25l45;61H88;1H34h?25h?25l45;61H99;1H34h?25h?25l45;61H10,110;1H34h?25h?25l45;62H111;1H34h?25h?25l45;62H212;1H34h?25h?25l45;62H313;1H34h?25h?25l45;62H414;1H34h?25h?25l45;62H515;1H34h?25h?25l45;62H616;1H34h?25h?25l45;62H717;1H34h?25h?25l45;62H818;1H34h?25h?25l45;62H919;1H34h?25h?25l45;61H2020;1H34h?25h?25l45;62H121;1H34h?25h?25l45;62H222;1H34h?25h?25l45;62H323;1H34h?25h?25l45;62H424;1H34h?25h?25l45;62H525;1H34h?25h?25l45;62H626;1H34h?25h?25l45;62H727;1H34h?25h?25l45;62H828;1H34h?25h?25l45;62H929;1H34h?25h?25l45;61H3030;1H34h?25h?25l45;62H131;1H34h?25h?25l45;62H2,0-132;1H34h?25h?25l45;62H3,1  33;1H34h?25h?25l45;62H434;1H34h?25h?25l45;62H535;1H34h?25h?25l45;62H636;1H34h?25h?25l45;62H737;1H34h?25h?25l45;62H838;1H34h?25h?25l45;62H9,0-139;1H34h?25h?25l45;61H40,1  40;1H34h?25h?25l45;62H141;1H34h?25h?25l45;62H242;1H34h?25h?25l45;62H343;1H34h?25h?25l45;62H444;1H34h?25h?25l1;44r44;1H
+1;45r45;1HK45;61H45,0-19C0%44;1H34h?25h?25l1;44r44;1H
+1;45r44;1H34m#0m45;61HK45;61H46,111C0%44;1H34h?25h?25l1;44r44;1H
+1;45r44;1H34m# ServerRoot: The top of the directory tree under which the server's0m45;61HK45;61H47,111C0%44;1H34h?25h?25l1;44r44;1H
+1;45r44;1H34m# configuration, error, and log files are kept.0m45;61HK45;61H48,111C0%44;1H34h?25h?25l1;44r44;1H
+1;45r44;1H34m#0m45;61HK45;61H49,111C0%44;1H34h?25h?25l1;44r44;1H
+1;45r44;1H34m# NOTE!  If you intend to place this on an NFS (or otherwise network)0m45;61HK45;61H50,111C0%44;1H34h?25h?25l1;44r44;1H
+1;45r44;1H34m# mounted filesystem then please read the LockFile documentation0m45;61HK45;61H51,111C0%44;1H34h?25h?25l1;44r1;1H2M1;45r43;1H34m# (available at <URL:http://httpd.apache.org/docs/2.2/mod/mpm_common.html#lockk44;1Hfile>);0m45;61HK45;61H52,111C0%43;1H34h?25h?25l1;44r44;1H
+1;45r44;1H34m# you will save yourself a lot of trouble.0m45;61HK45;61H53,111C1%44;1H34h?25h?25l1;44r44;1H
+1;45r44;1H34m#0m45;61HK45;61H54,111C1%44;1H34h?25h?25l1;44r44;1H
+?25l97m41mE45: 'readonly'3オ
+?25l45;1HK45;1H?1l34h?25h?1049l[ec2-user@ip-172-31-5-1092working]$51@d1@u1@111P1@s1@u1@d1@o1@conf25l45;2HK45;2H34h?25hq?25l34h?25h!?25l34h?25h
+?1049h?1h1;45r34l34h?25h23m24m0mHJ?25l45;1H"/etc/httpd/conf/httpd.conf" 1010L, 34474C1;1H34m#
+# This is the main Apache server configuration file.  It contains the
+# configuration directives that give the server its instructions.
+# See <URL:http://httpd.apache.org/docs/2.2/> for detailed information.
+# In particular, see
+# <URL:http://httpd.apache.org/docs/2.2/mod/directives.html>
+# for a discussion of each configuration directive.
+#
+#
+# Do 0m30m103mNOT0m34m simply read the instructions in here without understanding
+# what they do.  They're here only as hints or reminders.  If you are unsure
+# consult the online docs. You have been warned.
+#
+# The configuration directives are grouped into three basic sections:
+#  1. Directives that control the operation of the Apache server process as a
+#     whole (the 'global environment').
+#  2. Directives that define the parameters of the 'main' or 'default' server,18;1H#     which responds to requests that aren't handled by a virtual host.
+#     These directives also provide default values for the settings
+#     of all virtual hosts.
+#  3. Settings for virtual hosts, which allow Web requests to be sent to
+#     different IP addresses or hostnames and have them handled by the
+#     same Apache server process.
+#
+# Configuration and logfile names: If the filenames you specify for many
+# of the server's control files begin with "/" (or "drive:/" for Win32), the
+# server will use that explicit path.  If the filenames do *not* begin
+# with "/", the value of ServerRoot is prepended -- so "logs/foo.log"
+# with ServerRoot set to "/etc/httpd" will be interpreted by the
+# server as "/etc/httpd/logs/foo.log".
+#
+
+### Section 1: Global Environment
+#
+# The directives in this section affect the overall operation of Apache,
+# such as the number of concurrent requests it can handle or where it
+# can find its configuration files.
+#
+
+#
+# Don't give away too much information about all the subcomponents
+# we are running.  Comment out this line if you don't mind remote sites
+# finding out what major optional modules you are running0m
+?25l23m24m0mHJ2;1H34m#S0m45;61H1,110C先頭1;1H34h?25h?25l45;1HK45;1H/34h?25hh?25l34h?25ht?25l34h?25ha?25l34h?25hc?25l34h?25hc?25l34h?25he?25l34h?25hs?25l34h?25hs?25l34h?25h
+# This should be changed to whatever you set DocumentRoot to.
+#0m
+38;5;130m<Directory0m31m "/var/www/html"0m38;5;130m>0m
+
+34m#
+# Possible values for the Options directive are "None", "All",
+# or any combination of:
+#   Indexes Includes FollowSymLinks SymLinksifOwnerMatch ExecCGI MultiViews
+#
+# Note that "MultiViews" must be named *explicitly* --- "Options All"
+# doesn't give it to you.
+#
+# The Options directive is both complicated and important.  Please see
+# http://httpd.apache.org/docs/2.2/mod/core.html#options
+# for more information.
+#0m
+    36mOptions0m 31mIndexes0m 31mFollowSymLinks0m
+
+34m#
+# AllowOverride controls what directives may be placed in .0m34m103mhtaccess0m34m files.
+# It can be "All", "None", or any combination of the keywords:
+#   Options FileInfo AuthConfig Limit
+#0m
+    36mAllowOverride0m 31mNone0m
+
+34m#
+# Controls who can get stuff from this server.
+#0m
+35m    Order 0m31mallow0m35m,0m31mdeny0m
+    35mAllow from 0m36mall0m
+
+38;5;130m</Directory>0m
+
+34m#
+# UserDir: The name of the directory that is appended onto a user's home
+# directory if a ~user request is received.
+#
+# The path to the end user account 'public_html' directory must be
+# accessible to the webserver userid.  This usually means that ~userid
+# must have permissions of 711, ~userid/public_html must have permissions
+# of 755, and documents contained therein must be world-readable.
+?25l"/etc/httpd/conf/httpd.conf"y1010L,v34473C0書込
+?1l34h?25h?1049l[ec2-user@ip-172-31-5-109 working]$ cd /var/log/hKwww/html/secret/
+[ec2-user@ip-172-31-5-109 secret]$ sudo service httpd restart
+Stopping httpd: 60G[0;32m  OK  0;39m]
+Starting httpd: 60G[0;32m  OK  0;39m]
+[ec2-user@ip-172-31-5-109 secret]$ curl "http://54.238.237.78/secret/"
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>401 Authorization Required</title>
+</head><body>
+<h1>Authorization Required</h1>
+<p>This server could not verify that you
+are authorized to access the document
+requested.  Either you supplied the wrong
+credentials (e.g., bad password), or your
+browser doesn't understand how to supply
+the credentials required.</p>
+<hr>
+<address>Apache/2.2.32 (Amazon) Server at 54.238.237.78 Port 80</address>
+</body></html>
+"CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC:"http://54.238.237.78/secret/"CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCc"http://54.238.237.78/secret/"CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCa"http://54.238.237.78/secret/"CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCn"http://54.238.237.78/secret/"CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCd"http://54.238.237.78/secret/"CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCi"http://54.238.237.78/secret/"CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCd"http://54.238.237.78/secret/"CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCa"http://54.238.237.78/secret/"CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCt"http://54.238.237.78/secret/"CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCe"http://54.238.237.78/secret/"CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC "http://54.238.237.78/secret/"CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+<!DOCTYPE HTML>
+<html>
+<body>
+SUCCESS
+</body>
+</html>
+[ec2-user@ip-172-31-5-109 secret]$ sudo vim index.html
+?1049h?1h1;45r34l34h?25h23m24m0mHJ?25l45;1H"index.html" 6L, 54C1;1H34m<!DOCTYPE HTML>0m
+36m<0m38;5;130mhtml0m36m>
+<0m38;5;130mbody0m36m>0m
+SUCCESS
+36m</0m38;5;130mbody0m36m>0m
+36m106m<0m36m/0m38;5;130mhtml0m36m106m>0m
+94m~                                                                             8;1H~                                                                             9;1H~                                                                             10;1H~                                                                             11;1H~                                                                             12;1H~                                                                             13;1H~                                                                             14;1H~                                                                             15;1H~                                                                             16;1H~                                                                             17;1H~                                                                             18;1H~                                                                             19;1H~                                                                             20;1H~                                                                             21;1H~                                                                             22;1H~                                                                             23;1H~                                                                             24;1H~                                                                             25;1H~                                                                             26;1H~                                                                             27;1H~                                                                             28;1H~                                                                             29;1H~                                                                             30;1H~                                                                             31;1H~                                                                             32;1H~                                                                             33;1H~                                                                             34;1H~                                                                             35;1H~                                                                             36;1H~                                                                             37;1H~                                                                             38;1H~                                                                             39;1H~                                                                             40;1H~                                                                             41;1H~                                                                             42;1H~                                                                             43;1H~                                                                             44;1H~                                                                             0m45;61H6,110C全て6;1H34h?25h?25l5;1H36m106m<5C>0m
+36m<5C>0m45;61H55;1H34h?25h?25l36m<5C>0m45;61H44;1H34h?25h?25l3;1H36m106m<4C>0m45;61H33;1H34h?25h?25l2;1H36m106m<4C>0m
+36m<4C>0m45;61H22;1H34h?25h?25l1;1H34m106m<13C>0m
+36m<4C>0m45;61H11;1H34h?25h?25l1;44r44;1H
+1;45r1;1H36m106m<4C>0m44;1H94m~                                                                             0m45;1HK45;61H1,110C全て1;1H34h?25h?25l1;44r44;1H
+1;45r1;1H36m106m<4C>0m44;1H94m~                                                                             0m45;61HK45;61H1,110C全て1;1H34h?25h?25l1;44r44;1H
+1;45r44;1H94m~                                                                             0m45;61HK45;61H1,110C全て1;1H34h?25h?25l
+36m106m<5C>0m45;61H22;1H34h?25h?25l36m<5C>0m
+36m106m<5C>0m45;61H33;1H34h?25h?25l2;1H36m106m<5C>0m
+?25l"index.html" 1L, 8C 書込み                                                   0m45;61H22;1H34h?25h?25l94m~                                                                             0m45;61H11;1H34h?25h?25l45;61HK45;1H:34h?25hw?25l34h?25hq?25l34h?25h
+.78/secret/"049l[ec2-user@ip-172-31-5-109 secret]$ curl -umamazon:candidate "http://54.238.237.
+SUCCESS
+[ec2-user@ip-172-31-5-109 secret]$ exit
+exit
+
+スクリプトは 2017年07月16日 23時14分39秒
+ に終了しました
